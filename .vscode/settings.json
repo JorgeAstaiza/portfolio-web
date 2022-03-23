@@ -1,0 +1,5 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "javascript.inlayHints.parameterNames.enabled": "all"
+}

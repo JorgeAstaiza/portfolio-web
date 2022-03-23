@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+.body-inicio {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-image: url('../../../assets/img/fondo-grandient.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.ctn-inicio {
+    background-color: white;
+    margin: 0 auto;
+    height: 90vh;
+    border-radius: 20px;
+    box-shadow:  0px 0px 28px -9px rgba(51, 51, 51, 0.75);
+    border: none;
+    background-color: rgb(143 143 143 / 52%);
+    backdrop-filter: blur(10px);
+}
+.header {
+    margin-top: 25px;
+}
+
+.txt-menu {
+    display: grid;
+    font-size: 15px;
+}
+.img-avatar {
+    max-width: 100%;
+    width: 445px;
+}
+
+.txt-description {
+  font-family: 'Hubballi', cursive;
+  font-size: 25px;
+  line-height: 25px;
+  margin-top: 50px;
+}
+ngx-emoji {
+  margin-top: 7px;
+}
+
+.ctn-texto {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.ctn-txt-img {
+    margin-top: 65px;
+}
+
+.faMenu {
+    font-size: 45px;
+}
+
+  /** animation scroll **/
+  
+.ctn-animation-scroll {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: rgb(3, 3, 3);
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text-scroll {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: rgb(41, 41, 41);
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+/*Animacion texto perfil*/
+.content {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow:hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ecf0f1;
+  
+  &__container {
+    font-weight: 400;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+
+    &:before {
+      content: '[';
+      left: 0;
+    }
+
+    &:after {
+      content: ']';
+      position: absolute;
+      right: 0;
+    }
+
+    &:after, &:before {
+      position: absolute;
+      top: 0;
+      color: #16a085;
+      font-size: 42px;
+      line-height: 40px;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    &__text {
+      display: inline;
+      float: left;
+      margin: 0;
+    }
+
+    &__list {
+      margin-top: 0;
+      padding-left: 23px;
+      text-align: left;
+      list-style: none;
+      animation-name: change;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+
+      &__item {
+        line-height:40px;
+        margin:0;
+      }
+    }
+  }
+}
+
+@-o-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
