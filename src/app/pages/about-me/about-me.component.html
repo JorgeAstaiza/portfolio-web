@@ -1,8 +1,9 @@
 <div class="body-inicio vh-100">
+   
     <div class="ctn-inicio  w-75 d-inline-block">
         <app-menu></app-menu>
         <div class="container">
-            <div class="row">
+            <div class="row ctn-about-me">
                 <div class="col">
                     <img class="img-profile" src="../../../assets/img/img-about-me.jpg" alt="" srcset="">
                 </div>
@@ -19,6 +20,44 @@
                 </div>
             </div>
             
+        </div>
+    </div>
+    <div style="transform: rotate(180deg);">
+
+        <div class="ctn-boton-menu">
+            <button (click)="toggleMenu()">
+                <img class="icon-logo" src="../../../assets/img/menu-lateral.png" alt="" srcset="">
+            </button>
+        </div>
+        <div [ngClass]="{'menu': flag, 'menu-oculto': !flag}" id="toggle-menu">
+            <div style="display: flex; justify-content: space-between;">
+                <ul>
+                    <li> 
+                        <a (click)="toggleMenu()" href="#inicio">Inicio</a> 
+                    </li>
+                    <li>
+                        <a (click)="toggleMenu()" href="#sobre-mi">Sobre mi</a> 
+                    </li>
+                    <li>
+                        <a (click)="toggleMenu()" href="#servicios">Mis servicios</a>
+                    </li>
+                    <li>
+                        <a (click)="toggleMenu()" href="#trabajos">Trabajos</a> 
+                    </li>
+                    <li> 
+                        <a (click)="toggleMenu()" href="#trayectoria">Trayectoria</a> 
+                    </li>
+                    <li> 
+                        <a (click)="toggleMenu()" href="#blog">Blog</a> 
+                    </li>
+                    <li> 
+                        <a (click)="toggleMenu()" href="#contacto">Contacto</a> 
+                    </li>
+                </ul>
+                <button class="ctn-boton-close" (click)="toggleMenu()">
+                    <img  src="../../../assets/img/icono-close.png" alt="" srcset="">
+                </button>
+            </div>
         </div>
     </div>
 </div>

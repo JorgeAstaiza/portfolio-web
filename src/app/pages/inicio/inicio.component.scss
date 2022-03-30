@@ -17,11 +17,11 @@
     border: none;
     background-color: rgb(143 143 143 / 52%);
     backdrop-filter: blur(10px);
+    width: 75%;
 }
 .header {
     margin-top: 25px;
 }
-
 .txt-menu {
     display: grid;
     font-size: 15px;
@@ -230,4 +230,121 @@ ngx-emoji {
   49.98%,62.64% {transform:translate3d(0,-75%,0);}
   66.64%,79.3% {transform:translate3d(0,-50%,0);}
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@media (min-width: 1000px) and (max-width: 1072px) {
+  .content{
+    top: 45%;
+  }
+}
+@media (min-width: 1072px) and (max-width: 1150px) {
+  .content{
+    top: 49%;
+  }
+}
+@media (min-width: 1145px) and (max-width: 1395px) {
+  .content{
+    top: 50%;
+  }
+}
+@media (min-width: 1395px) and (max-width: 1990px) {
+  .content{
+    top: 52%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1000px) {
+  .content{
+    top: 43%;
+  }
+}
+@media (min-width: 770px) and (max-width: 993px) {
+  .content{
+    top: 38%;
+  }
+}
+@media (max-width: 1000px) {
+  app-menu {
+    display: none;
+  }
+  .body-inicio{
+    display: block;
+  }
+  .ctn-inicio {
+      width: 90% !important;
+  }
+  .img-avatar {
+    max-width: 80%;
+  }
+  .ctn-txt-img {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 770px) {
+  .ctn-info-inicio {
+    flex-direction: column;
+  }
+  .img-avatar {
+    width: 340px;
+  }
+  .txt-description {
+    margin-top: 80px;
+  }
+  .content {
+    top: 23%;
+    left: 50%;
+    font-size: 17px;
+  }
+  .ctn-txt-img {
+    margin-top: 60px;
+  }
+  .content__container{
+    padding: 0 25px;
+  }
+}
+@media (max-width: 500px) {
+  
+  h2 {
+    margin-top: 10px;
+  }
+  .ctn-img-inicio {
+    margin-top: 50px;
+  }
+  .ctn-txt-img{
+    margin-top: 45px;
+  }
+  .ctn-info-inicio {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-avatar {
+    max-width: 85%;
+  }
+  .ctn-animation-scroll {
+    display: none;
+  }
+  .txt-description{
+    font-size: 23px;
+    margin-top: 130px;
+  }
+  .content {
+    top: 26%;
+    left: 50%;
+    height: 133px;
+    font-size: 22px;
+  }
+  .content__container{
+    width: 260px;
+    padding: 0;
+  }
+  .content__container__list {
+    padding-left: 30px;
+  }
+  .ctn-inicio {
+    width: 90% !important;
+    height: 90vh;
+    margin-top: -60px;
+  }
+  .ctn-texto {
+    width: 90%;
+  }
 }

@@ -15,6 +15,9 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { MyServicesComponent } from './pages/my-services/my-services.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BlogComponent } from './pages/blog/blog.component';
+import { ContainerComponent } from './pages/container/container.component';
+import { SwiperModule } from 'swiper/angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MenuComponent,
     SkillsComponent,
     MyServicesComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BlogComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FontAwesomeModule,
     AngularFullpageModule,
     EmojiModule,
-    NgbModule
+    NgbModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

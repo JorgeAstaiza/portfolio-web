@@ -1,33 +1,48 @@
-<div class="body-inicio vh-100">
-    <div class="ctn-inicio  w-75 d-inline-block">
-        <app-menu></app-menu>
+<app-container>
+  <div class="ctn-inicio  w-75 d-inline-block">
+      <app-menu></app-menu>
+      <div class="ctn-skills-services">
         <app-skills></app-skills>
-        <h3>Mis servicios</h3>
-        <div class="card-group">
-            <div class="card card-landing">
-              <img src="../../../assets/img/landing-page-icon.png" class="card-img-top" alt="Landing Pages">
-              <div class="card-body">
-                <h5 class="card-title">Landing pages</h5>
-                <p class="card-text">Construccion de landing pages a medida para tu negocio, tienda o pagina personal.</p>
+        <div class="ctn-swiper">
+          <h3 class="title-my-services">Mis servicios</h3>
+          <swiper [effect]="'cards'" [grabCursor]="true" class="mySwiper">
+            <ng-template swiperSlide>
+              <div class="card">
+                <img class="card-img-top" src="../../../assets/img/landing-page-icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Landing pages</h5>
+                  <p class="card-text">Construccion de landing pages a medida para tu negocio, tienda o pagina personal.</p>
+                </div>
               </div>
-              
-            </div>
-            <div class="card card-app-web">
-              <img src="../../../assets/img/web-application-icon.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Aplicaciones web</h5>
-                <p class="card-text">Diseño y desarrollo de SPA con modernas tecnologías web.</p>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="card">
+                <img class="card-img-top" src="../../../assets/img/web-application-icon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Aplicaciones web</h5>
+                  <p class="card-text">Diseño y desarrollo de SPA con modernas tecnologías web.</p>
+                </div>
               </div>
-             
-            </div>
-            <div class="card card-app-movil">
-              <img src="../../../assets/img/mobile-application-icon.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Aplicaciones moviles</h5>
-                <p class="card-text">Implementacion de aplicaciones moviles para Android y IOS</p>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="card">
+                <img class="card-img-top" src="../../../assets/img/mobile-application-icon.png"  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Aplicaciones moviles</h5>
+                  <p class="card-text">Implementacion de aplicaciones moviles para Android y IOS</p>
+                </div>
               </div>
-             
-            </div>
-          </div>
-    </div>
-</div>
+            </ng-template>
+            <!-- <ng-template swiperSlide>Slide 4</ng-template
+            ><ng-template swiperSlide>Slide 5</ng-template
+            ><ng-template swiperSlide>Slide 6</ng-template
+            ><ng-template swiperSlide>Slide 7</ng-template
+            ><ng-template swiperSlide>Slide 8</ng-template
+            ><ng-template swiperSlide>Slide 9</ng-template> -->
+          </swiper>
+        </div>
+      </div>
+
+  </div>
+
+</app-container>

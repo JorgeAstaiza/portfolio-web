@@ -21,6 +21,9 @@
     transform: rotate(180deg);
 
 }
+.ctn-boton-menu {
+    display: none;
+  }
 .img-profile {
     max-width: 100%;
     width: 500px;
@@ -40,9 +43,202 @@
 
 .title-me {
     text-align: left;
-    color: #6d6d6d;
+    color: #3a3a3a;
 }
 .line-bottom {
-    border-bottom: 5px solid #6d6d6d;
+    border-bottom: 5px solid #3a3a3a;
     width: 50px;
+}
+.ctn-boton-close {
+    height: 30px;
+    background: transparent;
+    border: none;
+    img {
+        width: 50px;
+    }
+}
+.menu-oculto {
+    display: none;
+}
+@media (max-width: 1000px) {
+    app-menu {
+      display: none;
+    }
+    .body-inicio{
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        color:black;
+    }
+    .icon-logo {
+        width: 60px;
+    }
+    .ctn-inicio {
+        width: 90% !important;
+    }
+    .ctn-boton-menu{
+        display: block;
+        text-align: initial;
+        margin-left: 10px;
+        button {
+            background: transparent;
+            border: none;
+        }
+    }
+    .menu {
+        background-color: rgba(109, 109, 109, 0.905);
+        width: 280px;
+        position: fixed;
+        z-index: 1;
+        height: 90vh;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+        top: 107%;
+        transition-duration: .5s;
+        ul {
+            overflow: hidden;
+            list-style: none;
+            width: 100%;
+            margin-top: 40px;
+            li {
+                padding: 20px 0;
+                margin: 10px 0;
+                border-left: 3px solid rgb(68, 68, 68);
+                font-family: 'Hubballi', cursive;
+                font-size: 25px;
+            }
+        }
+    }
+    .menu-oculto {
+        background-color: rgba(109, 109, 109, 0.905);
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 70vh;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+        margin-top: -65px;
+        transition-duration: .5s;
+
+        ul {
+            overflow: hidden;
+            list-style: none;
+            width: 200px;
+            margin-top: 40px;
+            li {
+                padding: 20px 0;
+                margin: 10px 0;
+                border-left: 3px solid rgb(68, 68, 68);
+            }
+        }
+    }
+  }
+@media (min-width: 500px) and (max-width: 1400px) {
+    .img-profile {
+        width: 80%;
+    }
+    .ctn-txt-about-me {
+        margin-top: 0;
+    }
+    .ctn-inicio {
+        width: 90% !important;
+        margin-top: 40px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1900px) { 
+    .img-profile{
+        width: 440px;
+    }
+    .ctn-txt-about-me{
+        margin-top: 75px;
+    }
+}
+@media (max-width: 992px) {
+    .ctn-about-me {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-profile {
+        max-width: 33%;
+    }
+    .ctn-txt-about-me{
+        margin-top: 0;
+    }
+    .txt-description {
+        font-size: 23px;
+        padding: 0 0;
+    }
+    .title-me {
+        margin-top: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .body-inicio{
+        display: block;
+    }
+    app-menu {
+        display: none;
+    }
+    .icon-logo {
+        width: 45px;
+    }
+    .ctn-inicio {
+        width: 90% !important;
+        margin-top: 28px;
+    }
+    .img-profile {
+        max-width: 55%;
+    }
+    .txt-description {
+        font-size: 17px;
+        padding: 0 13px;
+    }
+    .line-bottom {
+        border-bottom: 3px solid #6d6d6d;
+    }
+   
+    br {
+        display: none;
+    }
+    .title-me {
+        font-size: 17px;
+    }
+    .ctn-boton-menu{
+        display: block;
+        text-align: initial;
+        margin-left: 10px;
+        button {
+            background: transparent;
+            border: none;
+        }
+    }
+    .menu {
+        background-color: rgba(109, 109, 109, 0.905);
+        width: 280px;
+        position: fixed;
+        z-index: 1;
+        height: 90vh;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+        top: 122%;
+        transition-duration: .5s;
+        ul {
+            overflow: hidden;
+            list-style: none;
+            width: 200px;
+            margin-top: 40px;
+            li {
+                padding: 20px 0;
+                margin: 10px 0;
+                border-left: 3px solid rgb(68, 68, 68);
+            }
+        }
+    }
+    .menu-oculto {
+        width: 0;
+    }
 }

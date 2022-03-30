@@ -26,23 +26,7 @@ h3{
 .ctn-carousel {
     width: 70%;
 }
-::ng-deep .fp-tableCell {
-    height: 100% !important;
-}
-::ng-deep .fp-slides {
-    width: 70%;
-    height: 75%;
-    display: flex;
-    align-items: center;
-    margin: 0 auto !important;
-}
 
-::ng-deep .img-fluid {
-    height: 370px;
-}
-::ng-deep .fp-slidesContainer {
-    transform: translate3d(0px, 0px, 0px);
-}
 li {
     text-align: justify;
 }
@@ -158,6 +142,10 @@ figcaption {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  padding: 50px;
+  p {
+    margin-bottom: 35px;
+  }
 }
 .buttons{
   position: fixed;
@@ -167,5 +155,28 @@ figcaption {
   transform: translateX(-50%);
   button {
     margin-right: 10px;
+  }
+}
+.a_git,
+.a_view {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.a_git {
+  background-color: rgb(79, 79, 79);
+  margin-right: 10px;
+  &:hover {
+    padding: 13px;
+    background-color: rgb(106, 106, 106);
+  }
+}
+.a_view {
+  background-color: rgb(33, 131, 196);
+  &:hover {
+    padding: 13px;
+    background-color: rgb(40, 146, 216);
   }
 }

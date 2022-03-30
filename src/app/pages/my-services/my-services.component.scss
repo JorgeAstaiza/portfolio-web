@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-.body-inicio {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    background-image: url('../../../assets/img/fondo-grandient.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
+@import "~swiper/css";
+@import "~swiper/css/effect-cards";
+
+
 .ctn-inicio {
     background-color: white;
     margin: 0 auto;
@@ -16,50 +12,43 @@
     background-color: rgb(143 143 143 / 52%);
     border: none;
 }
+.card {
+    height: 100%;
+    background: transparent;
+}
 .card-title,
 .card-text {
     font-family: 'Hubballi', cursive;
-    font-size: 20px;
 }
 .card-title {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: bold;
 }
 .card-img-top {
-    width: 300px;
-    height: 200px;
-    :hover {
-        width: 310px;
-        height: 210px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.card-body {
+    color: black;
+    .card-text {
+        font-size: 17px;
     }
 }
-
-.card-group{
-    justify-content: space-around;
-    margin: 0 auto;
-    padding: 0 40px 0 40px;
-    margin-top: 20px;
-    &:hover .card:not(:hover){
-        filter: grayscale(100%);
-        &::after {
-        background-color: rgba(#000, 0.5);
-        }
-    }
-    .card {
-        align-items: center;
-        background-color: rgb(143 143 143 / 52%);
-        backdrop-filter: blur(10px);
-        box-shadow: 0px 20px 50px #555;
-        width: 30%;
-        border: none;
-        border-top-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-
-        :hover {
-            cursor: pointer;
-        }
-    }
+.title-my-services {
+    margin-top: 15px;
 }
+.ctn-skills-services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+}
+.ctn-swiper {
+  display: flex;
+  flex-direction: column;
+}
+
 .card-app-web {
     margin: 0 25px 0 25px !important;
 }
@@ -69,4 +58,162 @@ h3{
     font-size: 30px;
     font-family: 'Hubballi', cursive;
     font-weight: bold;
+}
+
+//SWIPER
+.swiper {
+    width: 325px;
+    height: 390px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 115, 17);
+  }
+  
+  .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+  
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+  
+  .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  }
+  
+  .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+  
+  .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+  
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+  
+  .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+  
+  .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+  
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+  
+@media (max-width: 1600px) and (min-width: 1000px){
+  .swiper {
+    width: 265px;
+    height: 340px
+  }
+  app-skills {
+    width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+    app-menu {
+      display: none;
+    }
+    .swiper {
+      width: 270px;
+      height: 328px;
+    }
+    .ctn-skills-services {
+      justify-content: initial;
+      flex-direction: column;
+    }
+    .body-inicio{
+        display: block;
+    }
+    .ctn-inicio {
+        width: 90% !important;
+    }
+    .ctn-boton-menu{
+        display: block;
+        text-align: initial;
+        margin-left: 10px;
+        button {
+            background: transparent;
+            border: none;
+        }
+    }
+    .menu {
+        background-color: rgba(109, 109, 109, 0.905);
+        width: 280px;
+        position: fixed;
+        z-index: 1;
+        height: 70vh;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+        margin-top: -65px;
+        transition-duration: .5s;
+        ul {
+            overflow: hidden;
+            list-style: none;
+            width: 200px;
+            margin-top: 40px;
+            li {
+                padding: 20px 0;
+                margin: 10px 0;
+                border-left: 3px solid rgb(68, 68, 68);
+            }
+        }
+    }
+    .menu-oculto {
+        background-color: rgba(109, 109, 109, 0.905);
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 70vh;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+        margin-top: -65px;
+        transition-duration: .5s;
+
+        ul {
+            overflow: hidden;
+            list-style: none;
+            width: 200px;
+            margin-top: 40px;
+            li {
+                padding: 20px 0;
+                margin: 10px 0;
+                border-left: 3px solid rgb(68, 68, 68);
+            }
+        }
+    }
+  }
+@media (max-width: 500px) {
+    app-menu {
+        display: none;
+    }
+    .ctn-inicio {
+        width: 90% !important;
+      }
+    .ctn-logo {
+        margin-top: 25px;
+    }
+    .sub-title {
+        margin: 0;
+    }
+    .title-my-services {
+        font-size: 25px;
+    }
 }

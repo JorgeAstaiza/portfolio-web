@@ -29,7 +29,7 @@
     font-size: 25px;
   }
   
-  .left, .center, .right, .lefter, .righter {
+  .left, .center, .right, .lefter, .righter, .left2, .right2 {
     width: 110px;
     height: 80px;
     transform-style: preserve-3d;
@@ -46,7 +46,6 @@
     background-color: rgba(95, 95, 95, 0.863);
     cursor: pointer;
     background-blend-mode: color-burn;
-    
     &:hover {
       box-shadow: 0 0 30px 10px rgba(85, 85, 85, 0.6);
       background-color: rgba(189, 189, 189, 0.801);
@@ -72,12 +71,20 @@
     transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
     background-image: url('../../../assets/img/serivices.png');
   }
+  .left2 {
+    transform: translateX(-18px) translateZ(-25px) rotateY(-5deg);
+    background-image: url('../../../assets/img/serivices.png');
+  }
   .center {
     opacity: 1;
     background-image: url('../../../assets/img/home.png');
     text-decoration: none;
   }
   .right {
+    transform: translateX(18px) translateZ(-25px) rotateY(5deg);
+    background-image: url('../../../assets/img/project.png');
+  }
+  .right2 {
     transform: translateX(30px) translateZ(-25px) rotateY(5deg);
     background-image: url('../../../assets/img/project.png');
   }

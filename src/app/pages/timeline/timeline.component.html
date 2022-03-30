@@ -20,7 +20,7 @@
                 <div class="timeline-block">
                     <div class="timeline-step-counter time-line-step-two">2019</div>
                     <div class="timeline-content">
-                    <p>Frotend Developer angular en Sitis S.A.S desarrollando software hospitalario.</p>
+                    <p>Frontend Developer angular en Sitis S.A.S desarrollando software hospitalario.</p>
                     </div>
                 </div>
                 <div class="timeline-block">
@@ -32,17 +32,59 @@
                 <div class="timeline-block">
                     <div class="timeline-step-counter time-line-step-four">2021</div>
                     <div class="timeline-content">
-                    <p>Fronten Developer angular en Asesoftware en multiples proyectos nacionales e internacionales.</p>
+                    <p>Frontend Developer angular en Asesoftware en multiples proyectos nacionales e internacionales.</p>
                     </div>
                 </div>
-               
-                <!-- <div class="timeline-block">
-                    <div class="timeline-step-counter time-line-step-six">6</div>
-                    <div class="timeline-content">
-                    <p>Timeline Step Title</p>
-                    </div>
-                </div> -->
             </section>
+
+
+            <div id="content">
+                <ul class="timeline">
+                  <li class="event" data-date="2021">
+                    <h3 class="title-event">Frontend Asesoftware S.A.S</h3>
+                    <p>Frontend Developer angular en Asesoftware en multiples proyectos nacionales e internacionales.</p>
+                  </li>
+                  <li class="event" data-date="2020">
+                    <h3 class="title-event">Graduacion universidad</h3>
+                    <p>Graduacion como Ingenerio de sistemas informaticos.</p>   
+                  </li>
+                  <li class="event" data-date="2019">
+                    <h3 class="title-event">Frontend Sitis S.A.S</h3>
+                    <p>Lider en el semillero de desarrollo de software de la universidad.</p>
+                    <p>Frontend Developer angular en Sitis S.A.S desarrollando software hospitalario.</p>
+                  </li>
+                  <li class="event" data-date="2018">
+                    <h3 class="title-event">Hult Prize</h3>
+                    <p>Ponente de idea de emprendimiento en la competencia Hult Prize.</p> 
+                  </li>
+                </ul>
+              </div>
+
+        </div>
+
+
+    </div>
+    <div style="transform: rotate(180deg);">
+
+        <div class="ctn-boton-menu">
+            <button (click)="toggleMenu()">
+                <img src="../../../assets/img/menu-lateral.png" alt="" srcset="">
+            </button>
+        </div>
+        <div [ngClass]="{'menu': flag, 'menu-oculto': !flag}" id="toggle-menu">
+            <div style="display: flex; justify-content: space-between;">
+    
+                <ul>
+                    <li>Inicio</li>
+                    <li>Sobre mi</li>
+                    <li>Mis servicios</li>
+                    <li>Trabajos</li>
+                    <li>Trayectoria</li>
+                </ul>
+                <button class="ctn-boton-close" (click)="toggleMenu()">
+                    <img src="../../../assets/img/icono-close.png" alt="" srcset="">
+                </button>
+            </div>
         </div>
     </div>
 </div>

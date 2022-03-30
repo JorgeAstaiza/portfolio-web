@@ -1,5 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -65,7 +64,6 @@ export class ProjectsComponent implements OnInit {
         }
       }
     } else {
-      console.log(this.estilos[4].valor);
       if (this.estilos[3].valor !== 'hideLeft') {
         for (let i = 0; i < this.estilos.length; i++) {
           switch (this.estilos[i].valor) {

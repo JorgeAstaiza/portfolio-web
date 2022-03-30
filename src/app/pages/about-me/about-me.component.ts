@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
+  flag = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public toggleMenu() {
+    this.flag = !this.flag;
   }
 
 }

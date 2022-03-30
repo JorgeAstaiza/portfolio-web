@@ -15,7 +15,7 @@ export class AppComponent {
 
       // fullpage options
       licenseKey: 'YOUR LICENSE KEY HERE',
-      anchors: ['Inicio', 'sobre-mi', 'servicios', 'trayectoria', 'proyectos', 'contacto'],
+      anchors: ['Inicio', 'sobre-mi', 'servicios', 'trayectoria', 'proyectos', 'blog', 'contacto'],
       menu: '#menu',
 
       // fullpage callbacks

@@ -1,84 +1,92 @@
-<div class="body-inicio vh-100">
-    <div class="ctn-inicio  w-75 d-inline-block">
-      <app-menu></app-menu>
-      <div id="carousel">
-        <h3>Algunos proyectos personales y empresariales en los que he participado</h3>
-        <div [class]="estilos[0].valor" id="HideLeft">
-          <figure>
-            <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
-            <figcaption>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
-              <a href="">texto de ancla</a>
-            </figcaption>
-          </figure>
-        </div>
-  
-        <div [class]="estilos[1].valor" id="PrevLeftSecond">
-          <figure>
-            <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
-            <figcaption>
+<app-container>
+  <div class="ctn-inicio  w-75 d-inline-block">
+    <app-menu></app-menu>
+    <div id="carousel">
+      <h3>Algunos proyectos personales y empresariales en los que he participado</h3>
+      <div [class]="estilos[0].valor" id="HideLeft">
+        <figure>
+          <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+          <figcaption>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
-            <a href="">texto de ancla</a>
+            <a class="a_git" href="">GitHub</a>
+            <a class="a_view" href="">Vista previa</a>
           </figcaption>
-          </figure>
-        </div>
-  
-        <div [class]="estilos[2].valor" id="Prev">
-          <figure>
-            <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
-            <figcaption>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
-            <a href="">texto de ancla</a>
-          </figcaption>
-          </figure>
-        </div>
-  
-        <div [class]="estilos[3].valor" id="Selected">
-          <figure>
-            <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
-            <figcaption>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
-            <a href="">texto de ancla</a>
-          </figcaption>
-          </figure>
-        </div>
-  
-        <div [class]="estilos[4].valor" id="Next">
-          <figure>
-            <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
-            <figcaption>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
-            <a href="">texto de ancla</a>
-          </figcaption>
-          </figure>
-        </div>
-  
-        <div [class]="estilos[5].valor" id="NextRightSecond">
-          <figure>
-            <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
-            <figcaption>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
-            <a href="">texto de ancla</a>
-          </figcaption>
-          </figure>
-        </div>
-  
-        <div [class]="estilos[6].valor" id="HideRight">
-          <figure>
-            <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-            <figcaption>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
-            <a href="">texto de ancla</a>
-          </figcaption>
-          </figure>
-        </div>
-  
+        </figure>
       </div>
-  
-      <div class="buttons">
-        <button type="button" class="btn btn-info" id="prev" (click)="moveProject('prev')"><ngx-emoji size:16 emoji=":arrow_backward::skin-tone-3:" ></ngx-emoji></button>
-        <button type="button" class="btn btn-info" id="next" (click)="moveProject('next')"><ngx-emoji size:16 emoji=":arrow_forward::skin-tone-3:" ></ngx-emoji></button>
+
+      <div [class]="estilos[1].valor" id="PrevLeftSecond">
+        <figure>
+          <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+          <figcaption>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
+          <a class="a_git" href="">GitHub</a>
+          <a class="a_view" href="">Vista previa</a>
+        </figcaption>
+        </figure>
       </div>
-   
+
+      <div [class]="estilos[2].valor" id="Prev">
+        <figure>
+          <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+          <figcaption>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
+          <a class="a_git" href="">GitHub</a>
+          <a class="a_view" href="">Vista previa</a>
+        </figcaption>
+        </figure>
+      </div>
+
+      <div [class]="estilos[3].valor" id="Selected">
+        <figure>
+          <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+          <figcaption>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
+          <a class="a_git" href="">GitHub</a>
+          <a class="a_view" href="">Vista previa</a>
+
+        </figcaption>
+        </figure>
+      </div>
+
+      <div [class]="estilos[4].valor" id="Next">
+        <figure>
+          <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+          <figcaption>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
+          <a class="a_git" href="">GitHub</a>
+          <a class="a_view" href="">Vista previa</a>
+        </figcaption>
+        </figure>
+      </div>
+
+      <div [class]="estilos[5].valor" id="NextRightSecond">
+        <figure>
+          <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+          <figcaption>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
+          <a class="a_git" href="">GitHub</a>
+          <a class="a_view" href="">Vista previa</a>
+        </figcaption>
+        </figure>
+      </div>
+
+      <div [class]="estilos[6].valor" id="HideRight">
+        <figure>
+          <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+          <figcaption>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti accusantium dignissimos voluptatem libero quibusdam.</p>
+          <a class="a_git" href="">GitHub</a>
+          <a class="a_view" href="">Vista previa</a>
+        </figcaption>
+        </figure>
+      </div>
+
     </div>
-</div>
+
+    <div class="buttons">
+      <button type="button" class="btn btn-info" id="prev" (click)="moveProject('prev')"><ngx-emoji size:16 emoji=":arrow_backward::skin-tone-3:" ></ngx-emoji></button>
+      <button type="button" class="btn btn-info" id="next" (click)="moveProject('next')"><ngx-emoji size:16 emoji=":arrow_forward::skin-tone-3:" ></ngx-emoji></button>
+    </div>
+ 
+  </div>
+</app-container>
