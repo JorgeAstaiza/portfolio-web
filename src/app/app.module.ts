@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContainerComponent } from './pages/container/container.component';
 import { SwiperModule } from 'swiper/angular';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,9 @@ import { SwiperModule } from 'swiper/angular';
     AngularFullpageModule,
     EmojiModule,
     NgbModule,
-    SwiperModule
+    SwiperModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

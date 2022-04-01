@@ -3,9 +3,8 @@
     text-align: center;
     display: flex;
     align-items: center;
-    background-image: url('../../../assets/img/fondo-grandient.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    
+    flex-direction: column;
 }
 .ctn-inicio {
     background-color: white;
@@ -24,7 +23,7 @@
 .content {
     flex-shrink: 1;
     flex-grow: 1;
-    padding: 3px 5px;
+    padding: 50px 0;
     position: relative;
 }
 .menu {
@@ -65,6 +64,7 @@
     }
     .ctn-boton-menu{
         display: block;
+        position: fixed;
         text-align: initial;
         margin-left: 10px;
         button {
@@ -81,7 +81,7 @@
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
         overflow: hidden;
-        margin-top: -46px;
+        margin-top: 3px;
         transition-duration: .5s;
         ul {
             overflow: hidden;

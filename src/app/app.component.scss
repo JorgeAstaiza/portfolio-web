@@ -1,1 +1,24 @@
-@import url(~fullpage.js/dist/fullpage.min.css);
+
+
+.pages-container {
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow:  0px 0px 28px -9px rgba(51, 51, 51, 0.75);
+    border: none;
+    background-color: rgb(143 143 143 / 52%);
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+app-inicio,
+app-about-me {
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+    .pages-container {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,21 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-.body-inicio {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    background-image: url('../../../assets/img/fondo-grandient.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
-}
-.ctn-inicio {
-    background-color: white;
-    margin: 0 auto;
-    height: 90vh;
-    border-radius: 20px;
-    box-shadow:  0px 0px 28px -9px rgba(51, 51, 51, 0.75);
-    border: none;
-    background-color: rgb(143 143 143 / 52%);
-    backdrop-filter: blur(10px);
+
+.ctn-inicio-projects {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
 }
 h3{
     margin-bottom: 40px;
@@ -55,9 +45,8 @@ ngx-emoji {
 
 #carousel {
   position: relative;
-  height: 400px;
+  height: 565px;
   top: 37%;
-  transform: translateY(-50%);
   overflow: hidden;
 
   div {
@@ -148,10 +137,10 @@ figcaption {
   }
 }
 .buttons{
-  position: fixed;
+  position: absolute;
   display: flex;
   left: 50%;
-  top: 83%;
+  top: 67%;
   transform: translateX(-50%);
   button {
     margin-right: 10px;
@@ -178,5 +167,29 @@ figcaption {
   &:hover {
     padding: 13px;
     background-color: rgb(40, 146, 216);
+  }
+}
+
+@media (max-width: 1400px){
+  .buttons {
+    top: 69.7%;
+  }
+}
+
+@media (max-width: 800px){
+  .ctn-inicio-projects{
+    height: 130vh;
+  }
+  .buttons {
+    top: 67.3%;
+  }
+}
+
+@media (max-width: 500px) {
+  .ctn-inicio-projects{
+    height: 70vh;
+  }
+  #carousel{
+    top: 10%;
   }
 }

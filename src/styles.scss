@@ -1,1 +1,17 @@
+
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'Hubballi', cursive;
+
+}
+
+body {
+    background-image: url('assets/img/fondo-grandient.jpg');
+    background-repeat: round; 
+    background-size: cover; 
+}

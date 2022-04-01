@@ -1,27 +1,37 @@
-<app-container>
-    <div class="ctn-inicio  w-75 d-inline-block">
-        <app-menu></app-menu>
-        <div class="ctn-form">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control"  >
-                  </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+<div class="ctn-inicio-contact">
+    <h3>Contacto</h3>
+    <p>Si tienes una idea la cual quieras materializar, contactame y trabajemos juntos!</p>
+    <div class="ctn-form">
+        <form [formGroup]="formulario" action="https://formspree.io/f/mnqwboge" method="POST" autocomplete="off">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                <input type="text" name="name" class="form-control" formControlName="name" (keydown)="validarForm()">
+                <div [class]="alertaNombre">
+                    Ingrese un nombre correcto.
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Algo que me quieras decir?</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                <input type="email" name="email"  class="form-control" id="exampleInputEmail1" formControlName="email" aria-describedby="emailHelp" (keydown)="validarForm()">
+                <div [class]="alertaEmail">
+                    Ingrese un correo electronico correcto.
                 </div>
-                <div class="ctn-button" style="position: relative;">
-                    <button type="submit">Enviar</button>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">¿Escribe tu mensaje aquí?</label>
+                <textarea class="form-control" name="message"  id="exampleFormControlTextarea1" formControlName="message" rows="3" (keydown)="validarForm()"></textarea>
+                <div [class]="alertaMensaje">
+                    Campo requerido!
                 </div>
-              </form>
-              <div class="ctn-img">
-                  <img src="../../../assets/img/tarjeta2.png" alt="">
-              </div>
-        </div>
+            </div>
+            <div class="ctn-button" style="position: relative;" >
+                <button type="submit" (click)="validarForm()">Enviar</button>
+            </div>
+            </form>
+            <div class="ctn-img">
+                <img src="../../../assets/img/tarjeta2.png" alt="">
+            </div>
     </div>
-</app-container>
+</div>
+

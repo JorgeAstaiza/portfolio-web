@@ -1,23 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-.body-inicio {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    background-image: url('../../../assets/img/fondo-grandient.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
+.ctn-inicio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
-.ctn-inicio {
-    background-color: white;
-    margin: 0 auto;
-    height: 90vh;
-    border-radius: 20px;
-    box-shadow:  0px 0px 28px -9px rgba(51, 51, 51, 0.75);
-    border: none;
-    background-color: rgb(143 143 143 / 52%);
-    backdrop-filter: blur(10px);
-    width: 75%;
+.ctn-redes {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  column-gap: 20px;
+  margin-bottom: 50px;
+}
+.ctn-redes img {
+  width: 35px;
 }
 .header {
     margin-top: 25px;
@@ -143,8 +139,8 @@ ngx-emoji {
 /*Animacion texto perfil*/
 .content {
   position: absolute;
-  top: 50%;
-  left: 27%;
+  top: 10%;
+  left: 24%;
   transform: translate(-50%, -50%);
   height: 160px;
   overflow:hidden;
@@ -231,35 +227,40 @@ ngx-emoji {
   66.64%,79.3% {transform:translate3d(0,-50%,0);}
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
-
+@media (max-width: 1400px){
+  .ctn-inicio {
+    height: 120vh;
+    justify-content: start;
+  }
+}
 @media (min-width: 1000px) and (max-width: 1072px) {
   .content{
-    top: 45%;
+    top: 10%;
   }
 }
 @media (min-width: 1072px) and (max-width: 1150px) {
   .content{
-    top: 49%;
+    top: 11.1%;
   }
 }
 @media (min-width: 1145px) and (max-width: 1395px) {
   .content{
-    top: 50%;
+    top: 8.5%;
   }
 }
 @media (min-width: 1395px) and (max-width: 1990px) {
   .content{
-    top: 52%;
+    top: 11%;
   }
 }
 @media (min-width: 993px) and (max-width: 1000px) {
   .content{
-    top: 43%;
+    top: 10%;
   }
 }
 @media (min-width: 770px) and (max-width: 993px) {
   .content{
-    top: 38%;
+    top: 12%;
   }
 }
 @media (max-width: 1000px) {
@@ -280,6 +281,9 @@ ngx-emoji {
   }
 }
 @media (max-width: 770px) {
+  .ctn-inicio {
+    height: 100vh;
+  }
   .ctn-info-inicio {
     flex-direction: column;
   }
@@ -290,7 +294,7 @@ ngx-emoji {
     margin-top: 80px;
   }
   .content {
-    top: 23%;
+    top: 10%;
     left: 50%;
     font-size: 17px;
   }
@@ -327,7 +331,7 @@ ngx-emoji {
     margin-top: 130px;
   }
   .content {
-    top: 26%;
+    top: 4.5%;
     left: 50%;
     height: 133px;
     font-size: 22px;
@@ -341,8 +345,8 @@ ngx-emoji {
   }
   .ctn-inicio {
     width: 90% !important;
-    height: 90vh;
-    margin-top: -60px;
+    height: 100vh;
+    margin: 0 auto;
   }
   .ctn-texto {
     width: 90%;
