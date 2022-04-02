@@ -19,6 +19,9 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContainerComponent } from './pages/container/container.component';
 import { SwiperModule } from 'swiper/angular';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+
+export const routes: Routes = [];
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +45,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     NgbModule,
     SwiperModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes, {
+      onSameUrlNavigation: 'ignore',
+      anchorScrolling: 'enabled',
+      scrollPositionRestoration: 'enabled'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

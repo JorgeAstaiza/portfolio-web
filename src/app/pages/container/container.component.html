@@ -12,25 +12,25 @@
     
                 <ul>
                     <li> 
-                        <a (click)="toggleMenu()" href="#inicio">Inicio</a> 
+                        <a (click)="toggleMenu()"[routerLink] = "['/']" fragment="home">Inicio</a> 
                     </li>
                     <li>
-                        <a (click)="toggleMenu()" href="#sobre-mi">Sobre mi</a> 
+                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="about">Sobre mi</a> 
                     </li>
                     <li>
-                        <a (click)="toggleMenu()" href="#servicios">Mis servicios</a>
+                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="services">Mis servicios</a>
                     </li>
                     <li>
-                        <a (click)="toggleMenu()" href="#trabajos">Trabajos</a> 
+                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="timeline">Trayectoria</a> 
                     </li>
                     <li> 
-                        <a (click)="toggleMenu()" href="#trayectoria">Trayectoria</a> 
+                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="projects">Trabajos</a> 
                     </li>
                     <li> 
-                        <a (click)="toggleMenu()" href="#blog">Blog</a> 
+                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="blog">Blog</a> 
                     </li>
                     <li> 
-                        <a (click)="toggleMenu()" href="#contacto">Contacto</a> 
+                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="contact">Contacto</a> 
                     </li>
                 </ul>
                 <button class="ctn-boton-close" (click)="toggleMenu()">
