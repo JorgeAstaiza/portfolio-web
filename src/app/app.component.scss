@@ -15,6 +15,11 @@ app-about-me {
     height: 100vh;
 }
 
+@media (min-width: 770px) and (max-width: 993px) {
+    .pages-container {
+        width: 90%;
+    }
+}
 @media (max-width: 800px) {
     .pages-container {
         width: 93%;

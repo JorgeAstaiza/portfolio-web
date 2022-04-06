@@ -26,17 +26,15 @@ p {
         margin-top: 80px;
     }
     form {
-        width: 400px;
+        width: 70%;
+        margin: 0 auto;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
-form {
-    width: 70%;
-    margin: 0 auto;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .oculto {
     display: none;
 }
@@ -113,21 +111,32 @@ button {
     background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
    }
 
-@media (max-width: 1530px) {
+@media (min-width: 1395px) and (max-width: 1900px) {
+    .ctn-form {
+        form {
+            width: 50%;
+        }
+    }
     .ctn-form{
         width: 90%;
-    }
-    .ctn-img img {
-            width: 425px !important;
+        margin-top: 30px;
+        .ctn-img img {
+                width: 425px;
+            }
+            
+        .ctn-img{
+            margin-top: 48px;
         }
-        
-    .ctn-img{
-        margin-top: 77px;
+    }
+    .ctn-inicio-contact {
+        height: 76vh;
+        justify-content: start;
+        margin-top: 20px;
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1395px) {
     .ctn-inicio-contact{
-        height: 100vh;
+        height: 95vh;
     }
     label {
         font-size: 22px;
@@ -135,39 +144,56 @@ button {
     .ctn-form {
         padding-bottom: 100px;
         margin-top: 60px;
-    }
-    .ctn-img{
-        margin-top: 15px !important;
+        .ctn-img{
+            margin-top: 15px;
+        }
+        .ctn-img img {
+            width: 410px;
+        }
     }
 }
-
+@media (max-width: 1370px) { 
+    .ctn-form {
+        form {
+            width: 47%;
+        }
+    }
+}
 @media (max-width: 1177px) {
     .ctn-form {
         flex-direction: column;
         margin-top: -30px;
-    }
-    .ctn-img{
-        order: 1;
-    }
-    .ctn-form{
         order: 2;
+        .ctn-img{
+            order: 1;
+        }
     }
     
 }
-
-@media (max-width: 800px) {
+@media (min-width: 770px) and (max-width: 993px) {
     form {
-        width: 100% !important;
+        width: 100%;
     }
     .ctn-form {
         margin-top: 10px;
         padding-bottom: 40px;
-    }
-    .ctn-img{ 
-        margin-top: 80px;
+        .ctn-img{ 
+            margin-top: 33px;
+        }
+        form {
+            width: 85%;
+            height: 35vh;
+            justify-content: start;
+        }
     }
     .ctn-button {
-        width: 100%;
+        width: 75%;
         margin-bottom: 15px;
     }
+    .ctn-inicio-contact {
+        height: 85vh;
+    }
+}
+@media (max-width: 800px) {
+   
 }

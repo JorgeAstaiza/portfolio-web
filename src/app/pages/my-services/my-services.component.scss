@@ -130,6 +130,11 @@ h3{
     width: 50%;
   }
 }
+@media (max-width: 1370px) { 
+  .ctn-inicio-services {
+    height: 85vh;
+  }
+}
 @media (max-width: 1000px) {
     app-menu {
       display: none;
@@ -203,6 +208,14 @@ h3{
                 border-left: 3px solid rgb(68, 68, 68);
             }
         }
+    }
+  }
+
+  @media (min-width: 650px) and (max-width: 850px) {
+    .ctn-inicio-services {
+      justify-content: start;
+      height: 65vh;
+      margin-top: 25px;
     }
   }
 @media (max-width: 500px) {

@@ -206,9 +206,15 @@ h3 {
     }
   }
 
+@media (min-width: 1395px) and (max-width: 1900px) {
+    .ctn-inicio {
+        height: 60vh;
+    }
+}
+
 @media (max-width: 1400px) {
     .ctn-inicio {
-        height: 77vh;
+        height: 72vh;
         width: 85%;
     }
 }
@@ -234,7 +240,7 @@ h3 {
         display: block;
     }
     .ctn-inicio {
-        width: 90% !important;
+        width: 90%;
         margin-top: 36px;
     }
     .ctn-boton-menu{
@@ -285,6 +291,14 @@ h3 {
         .timeline-block:nth-child(even) & {
             left: 10px;
         }
+    }
+}
+@media (min-width: 770px) and (max-width: 993px) {
+    .ctn-inicio {
+        height: 50vh;
+    }
+    .horizontal-timeline-container {
+        margin-right: 30px;
     }
 }
 @media (max-width: 788px) {

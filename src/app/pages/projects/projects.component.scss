@@ -117,6 +117,7 @@ ngx-emoji {
 figure {
   position: relative;
   padding: 5px;
+  overflow: hidden;
 }
 figure:hover figcaption {
   display: block;
@@ -172,16 +173,18 @@ figcaption {
 
 @media (max-width: 1400px){
   .buttons {
-    top: 69.7%;
+    top: 81.5%;
   }
 }
 
-@media (max-width: 800px){
-  .ctn-inicio-projects{
-    height: 130vh;
-  }
+@media (min-width: 1395px) and (max-width: 1900px) {
   .buttons {
-    top: 67.3%;
+    top: 81.5%;
+  }
+}
+@media (min-width: 770px) and (max-width: 993px) {
+  .buttons {
+    top: 79.1%;;
   }
 }
 

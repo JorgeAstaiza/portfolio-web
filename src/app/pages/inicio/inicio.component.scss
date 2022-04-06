@@ -245,12 +245,19 @@ ngx-emoji {
 }
 @media (min-width: 1145px) and (max-width: 1395px) {
   .content{
-    top: 8.5%;
+    top: 10.2%;
   }
+  .ctn-inicio {
+    height: 100vh;
+  }
+  
 }
-@media (min-width: 1395px) and (max-width: 1990px) {
+@media (min-width: 1395px) and (max-width: 1900px) {
   .content{
-    top: 11%;
+    top: 12.3%;
+  }
+  .ctn-inicio {
+    height: 90vh;
   }
 }
 @media (min-width: 993px) and (max-width: 1000px) {
@@ -259,8 +266,20 @@ ngx-emoji {
   }
 }
 @media (min-width: 770px) and (max-width: 993px) {
+  .ctn-inicio {
+    margin: 0 auto;
+    height: 95vh;
+    justify-content: space-around;
+  }
   .content{
-    top: 12%;
+    top: 10.9%;
+    left: 28%;
+  }
+  .ctn-texto {
+    width: 90%;
+  }
+  .txt-description {
+    margin-top: 70px;
   }
 }
 @media (max-width: 1000px) {
