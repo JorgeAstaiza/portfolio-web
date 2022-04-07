@@ -183,10 +183,18 @@
         max-width: 40%
     }
 }
+@media (max-width: 620px) {
+    .ctn-inicio-about {
+        height: 87vh;
+    }
+    .img-profile {
+        max-width: 45%;
+    }
+}
 @media (max-width: 500px) {
     .ctn-inicio-about {
         width: 100%;
-        height: 100vh;
+        height: 775px;
     }
     app-menu {
         display: none;

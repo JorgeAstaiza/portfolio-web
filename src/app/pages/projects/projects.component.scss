@@ -170,7 +170,11 @@ figcaption {
     background-color: rgb(40, 146, 216);
   }
 }
-
+@media (min-width: 1900px){
+  .buttons {
+    top: 82.7%;
+  }
+}
 @media (max-width: 1400px){
   .buttons {
     top: 81.5%;
@@ -187,12 +191,19 @@ figcaption {
     top: 79.1%;;
   }
 }
-
+@media (max-width: 620px) {
+  .buttons {
+    top: 80.2%;
+  }
+}
 @media (max-width: 500px) {
   .ctn-inicio-projects{
-    height: 70vh;
+    height: 610px;
   }
   #carousel{
-    top: 10%;
+    top: 0;
+  }
+  .buttons {
+    top: 79.6%;
   }
 }

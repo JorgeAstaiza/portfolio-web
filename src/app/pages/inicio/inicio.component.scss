@@ -227,6 +227,14 @@ ngx-emoji {
   66.64%,79.3% {transform:translate3d(0,-50%,0);}
   83.3%,95.96% {transform:translate3d(0,-25%,0);}
 }
+@media (min-width: 1900px){
+  .content {
+    top: 13.6%;
+  }
+  .txt-description {
+    margin-top: 80px;
+  }
+}
 @media (max-width: 1400px){
   .ctn-inicio {
     height: 120vh;
@@ -324,6 +332,15 @@ ngx-emoji {
     padding: 0 25px;
   }
 }
+@media (max-width: 620px) {
+  .content {
+    top: 6.1%;
+    left: 45%;
+  }
+  .img-avatar {
+    width: 265px;
+  }
+}
 @media (max-width: 500px) {
   
   h2 {
@@ -347,10 +364,10 @@ ngx-emoji {
   }
   .txt-description{
     font-size: 23px;
-    margin-top: 130px;
+    margin-top: 70px;
   }
   .content {
-    top: 4.5%;
+    top: 5.3%;
     left: 50%;
     height: 133px;
     font-size: 22px;
@@ -364,7 +381,7 @@ ngx-emoji {
   }
   .ctn-inicio {
     width: 90% !important;
-    height: 100vh;
+    height: 705px;
     margin: 0 auto;
   }
   .ctn-texto {

@@ -218,10 +218,15 @@ h3{
       margin-top: 25px;
     }
   }
+@media (max-width: 620px) {
+  .ctn-inicio-services {
+    height: 100vh;
+  }
+}
 @media (max-width: 500px) {
   .ctn-inicio-services {
-    height: 90vh;
-    justify-content: start;
+    height: 765px;
+    justify-content: space-between;
   }
   app-menu {
       display: none;
