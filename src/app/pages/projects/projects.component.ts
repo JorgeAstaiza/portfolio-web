@@ -1,11 +1,34 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { SwiperOptions } from 'swiper';
+import SwiperCore, { Keyboard, Pagination, Navigation, Virtual } from 'swiper';
 
+SwiperCore.use([Keyboard, Pagination, Navigation, Virtual]);
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+
+  config: SwiperOptions = {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    direction: 'vertical',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: { 
+      el:'swiper__pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+
+    mousewheel: {
+      invert: false
+    }
+  };
+
   public estilos = [
     {posicion: 0, valor: 'hideLeft'},
     {posicion: 1, valor: 'prevLeftSecond'},
