@@ -183,21 +183,16 @@
         max-width: 40%
     }
 }
-@media (max-width: 620px) {
-    .ctn-inicio-about {
-        height: 87vh;
-    }
-    .img-profile {
-        max-width: 45%;
-    }
-}
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .ctn-inicio-about {
         width: 100%;
-        height: 775px;
+        height: 800px;
     }
     app-menu {
         display: none;
+    }
+    .img-profile {
+        max-width: 45%;
     }
     .icon-logo {
         width: 45px;
@@ -253,5 +248,11 @@
     }
     .menu-oculto {
         width: 0;
+    }
+}
+
+@media (max-height: 560px) {
+    .ctn-inicio-about {
+        height: 870px
     }
 }

@@ -30,9 +30,6 @@
     width: 0;
 }
 
-.is-desactive {
-    width: 0;
-}
 .ctn-boton-close {
     height: 30px;
     background: transparent;
@@ -76,13 +73,13 @@
         background-color: rgba(109, 109, 109, 0.905);
         width: 280px;
         position: fixed;
-        z-index: 999;
+   
         height: 90vh;
+        transition-duration: 500ms !important;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
         overflow: hidden;
         margin-top: 3px;
-        transition-duration: .5s;
         ul {
             overflow: hidden;
             list-style: none;
@@ -100,6 +97,10 @@
     }
     .menu-oculto {
         width: 0;
+        height: 0;
+        left: 0;
+        right: 0;
+        transition-duration: 500ms !important;
     }
 }
 

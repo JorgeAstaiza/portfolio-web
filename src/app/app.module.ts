@@ -20,6 +20,8 @@ import { ContainerComponent } from './pages/container/container.component';
 import { SwiperModule } from 'swiper/angular';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { SwiperDesktopComponent } from './pages/projects/swiper-desktop/swiper-desktop.component';
+import { SwiperMobileComponent } from './pages/projects/swiper-mobile/swiper-mobile.component';
 
 export const routes: Routes = [];
 @NgModule({
@@ -34,7 +36,9 @@ export const routes: Routes = [];
     MyServicesComponent,
     ProjectsComponent,
     BlogComponent,
-    ContainerComponent
+    ContainerComponent,
+    SwiperDesktopComponent,
+    SwiperMobileComponent
   ],
   imports: [
     BrowserModule,

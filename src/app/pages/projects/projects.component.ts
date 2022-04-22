@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation} from '@angular/core';
-import { SwiperOptions } from 'swiper';
+import Swiper, { SwiperOptions } from 'swiper';
 import SwiperCore, { Keyboard, Pagination, Navigation, Virtual } from 'swiper';
 
 SwiperCore.use([Keyboard, Pagination, Navigation, Virtual]);
@@ -10,24 +10,7 @@ SwiperCore.use([Keyboard, Pagination, Navigation, Virtual]);
 })
 export class ProjectsComponent implements OnInit {
 
-  config: SwiperOptions = {
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    direction: 'vertical',
-    fadeEffect: {
-      crossFade: true
-    },
-    pagination: { 
-      el:'swiper__pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-
-    mousewheel: {
-      invert: false
-    }
-  };
+  
 
   public estilos = [
     {posicion: 0, valor: 'hideLeft'},
@@ -41,6 +24,7 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    Swiper.use([Pagination]);
   }
 
   public moveProject(action: string) {

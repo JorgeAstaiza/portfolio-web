@@ -13,27 +13,35 @@
 .card {
     height: 100%;
     background: transparent;
+    &-body {
+      color: black;
+      .card-text {
+          font-size: 17px;
+          font-weight: 300;
+      }
+  }
+  &-mobile {
+    height: 110%;
+  }
+  &-title,
+  &-text {
+      font-family: 'Hubballi', cursive;
+  }
+  &-title {
+      font-size: 27px;
+      font-weight: bold;
+  }
+  &-img-top {
+      width: auto;
+      height: auto;
+      padding: 10px;
+  }
+  &-info-mobile{
+    padding: 0;
+  }
 }
-.card-title,
-.card-text {
-    font-family: 'Hubballi', cursive;
-}
-.card-title {
-    font-size: 27px;
-    font-weight: bold;
-}
-.card-img-top {
-    width: auto;
-    height: auto;
-    padding: 10px;
-}
-.card-body {
-    color: black;
-    .card-text {
-        font-size: 17px;
-        font-weight: 300;
-    }
-}
+
+
 .title-my-services {
     margin-top: 15px;
 }

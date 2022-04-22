@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+.card-group {
+    display: none;
+  }
+  @media (max-width: 620px) {
+    .card-group {
+      display: block;
+    }
+    .ctn-button-projects{
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        border: 2px solid rgb(63, 63, 63);
+        border-radius: 30px !important;
+        margin: 20px 17px !important;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2), 0 0 1rem rgba(0,0,0,0.2);
+        background-color: rgba(191, 191, 191, 0.678);
+        padding: 10px;
+        &-img-top {
+            max-width: 100%;  
+            opacity: 0;
+            animation: ImageFadeIn .8s 1.4s forwards;
+            border-top-left-radius: 30px !important;
+            border-top-right-radius: 30px !important;
+        }
+        &-body {
+            margin-top: -1rem;
+            opacity: 0;
+            animation: ContentFadeIn .8s 1.6s forwards;
+        }
+        &-text {
+            font-size: 20px;
+            font-family: 'Hubballi', cursive;
+        }
+    }
+    @keyframes ContentFadeIn {
+        0% { transform: translateY(-1rem); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+      }
+
+    @keyframes ImageFadeIn {
+        0% { transform: translate(-.5rem, -.5rem) scale(1.05); opacity: 0; filter: blur(2px); }
+        50% { opacity: 1; filter: blur(2px); }
+        100% { transform: translateY(0) scale(1.0); opacity: 1; filter: blur(0); }
+      }
+  }

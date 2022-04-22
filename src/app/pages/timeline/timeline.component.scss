@@ -157,15 +157,14 @@ h3 {
     list-style: none;
     text-align: left;  
     max-width: 90%; 
-    
-    h1, h2, h3 {
-     font-family: $font-title;
-     letter-spacing: 1.5px;
-     font-weight: 100;
-     font-size: 1.4em;    
+    &-title-event{
+        font-family: $font-title;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        font-size: 1.4em;    
     }
-    
-    .event {
+
+    &-event {
       border-bottom: 1px dashed fade($color-light, 10%);
       padding-bottom: ($spacing * 0.5);
       margin-bottom: $spacing;  
@@ -189,7 +188,7 @@ h3 {
         content: attr(data-date);
         text-align: right;
         font-weight: 100;    
-        font-size: 0.9em;
+        font-size: 1.3em;
         min-width: $date;
       }
   
@@ -318,28 +317,17 @@ h3 {
         }
     }
 }
-@media (max-width: 670px) {
+
+@media (max-width: 600px) {
     .ctn-inicio {
-        height: 85vh;
+        margin-top: 0;
+        height: 920px;
     }
     .horizontal-timeline-container {
         display: none;
     }
     #content {
         display: block;
-    }
-    .ctn-time-line {
-        justify-content: initial;
-    }
-    .title-event {
-        margin-top: 15px;
-    }
-}
-@media (max-width: 620px) {
-    .ctn-inicio {
-        height: 75vh;
-    }
-    #content {
         margin-top: 20px;
     }
     li{
@@ -348,15 +336,9 @@ h3 {
         }
     }
 }
-@media (max-width: 500px) {
-    .ctn-inicio {
-        margin-top: 0;
-        height: 735px;
-    }
-    .timeline{
-        margin-left: 50px;
-    }
-    .title-event {
-        font-size: 1.1em !important;
+
+@media (max-height: 560px) {
+    .ctn-inicio{
+        height: 1065px;
     }
 }

@@ -4,58 +4,14 @@
   <h3>Projectos</h3>
   <p class="txt-descripcion">Algunos proyectos personales y empresariales en los que he participado</p>
   <div class="ctn-swiper">
-    <swiper [config]="config" class="swiper">
-      <ng-template swiperSlide class="swiper__item swiper-slide item-project">
-        <div class="swiper__img">
-          
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
-        </div>
-        <div class="swiper__content">
-          <span class="swiper__code">26 December 2019</span>
-          <div class="swiper__title">Lorem Ipsum Dolor</div>
-          <div class="swiper__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-          <a href="#" class="swiper__button">READ MORE</a>
-        </div>
-        
-  
-      </ng-template>
-      <ng-template swiperSlide class="swiper__item swiper-slide item-project">
-        <div class="swiper__img">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
-        </div>
-        <div class="swiper__content">
-          <span class="swiper__code">26 December 2019</span>
-          <div class="swiper__title">Lorem Ipsum Dolor2</div>
-          <div class="swiper__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-          <a href="#" class="swiper__button">READ MORE</a>
-          
-        </div>
-      
-      </ng-template>
-      
-      <ng-template swiperSlide class="swiper__item swiper-slide item-project">
-        <div class="swiper__img">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
-        </div>
-        <div class="swiper__content">
-          <span class="swiper__code">26 December 2019</span>
-          <div class="swiper__title">Lorem Ipsum Dolor</div>
-          <div class="swiper__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-          <a href="#" class="swiper__button">READ MORE</a>
-        </div>
-        
-      </ng-template>
-       
-      <div class="swiper__pagination"></div>
-
-    </swiper>
-
+    <app-swiper-desktop></app-swiper-desktop>
+    <app-swiper-mobile></app-swiper-mobile>
     
   </div>
-
-  <!-- <div id="carousel"> -->
+  
+  <!-- <div id="carousel">
     
-    <!-- <div [class]="estilos[0].valor" id="HideLeft">
+    <div [class]="estilos[0].valor" id="HideLeft">
       <figure>
         <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
         <figcaption>
@@ -88,9 +44,9 @@
       </figure>
     </div>
 
-    <div [class]="estilos[3].valor" id="Selected">
+    <div [class]="estilos[3].valor" id="Selected" (document:mousemove)="onMouseMove($event)">
       <figure>
-        <img class="img-selected" src=".../../../../../assets/img/aristos.gif">
+        <img  src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
         <figcaption>
         <p>Landing Page para la empresa Aristos Soluciones S.A</p>
         <a class="a_git" href="https://github.com/JorgeAstaiza/AristosSoluciones">GitHub</a>
@@ -130,13 +86,13 @@
         <a class="a_view" href="">Vista previa</a>
       </figcaption>
       </figure>
-    </div> -->
+    </div>
 
   </div>
 
-  <!-- <div class="buttons">
+  <div class="buttons">
     <button type="button" class="btn btn-info" id="prev" (click)="moveProject('prev')"><ngx-emoji size:16 emoji=":arrow_backward::skin-tone-3:" ></ngx-emoji></button>
     <button type="button" class="btn btn-info" id="next" (click)="moveProject('next')"><ngx-emoji size:16 emoji=":arrow_forward::skin-tone-3:" ></ngx-emoji></button>
-  </div> -->
+  </div>  -->
 
-<!-- </div> -->
+</div>
