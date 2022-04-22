@@ -41,19 +41,18 @@
   }
 }
 
-
-.title-my-services {
-    margin-top: 15px;
-}
 .ctn-skills-services {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 70%;
-}
-.ctn-swiper {
-  display: flex;
-  flex-direction: column;
+  &__swiper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-top: 15px;
+  }
 }
 
 .card-app-web {
@@ -248,7 +247,7 @@ h3{
   .sub-title {
       margin: 0;
   }
-  .title-my-services {
+  .ctn-skills-services__title {
       font-size: 25px;
   }
 }

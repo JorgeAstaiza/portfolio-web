@@ -11,17 +11,17 @@
 .ctn-boton-menu {
     display: none;
   }
-.img-profile {
+.ctn-page-about__img {
     max-width: 100%;
     width: 500px;
     margin-top: 30px;
     border-radius: 25px;
 }
-.ctn-txt-about-me {
+.ctn-page-about__text {
     margin-top: 130px;
 }
 
-.txt-description {
+.ctn-page-about__txt-description {
     font-family: 'Hubballi', cursive;
     font-size: 25px;
     line-height: 25px;
@@ -131,10 +131,10 @@
     }
   }
 @media (min-width: 500px) and (max-width: 1400px) {
-    .img-profile {
+    .ctn-page-about__img {
         width: 80%;
     }
-    .ctn-txt-about-me {
+    .ctn-page-about__text {
         margin-top: 0;
     }
     .ctn-inicio {
@@ -149,37 +149,38 @@
     
 }
 @media (min-width: 992px) and (max-width: 1900px) { 
-    .img-profile{
+    .ctn-page-about__img{
         width: 440px;
     }
-    .ctn-txt-about-me{
+    .ctn-page-about__text {
         margin-top: 75px;
     }
 }
 @media (max-width: 992px) {
-    .ctn-about-me {
+    .ctn-page-about {
         display: flex;
         flex-direction: column;
+        &__img {
+            max-width: 33%;
+        }
+        &__title {
+            margin-top: 15px;
+        }
+        &__txt-description{
+            font-size: 23px;
+            padding: 0 0;
+        }
     }
-    .img-profile {
-        max-width: 33%;
-    }
-    .ctn-txt-about-me{
+    .ctn-page-about__text {
         margin-top: 0;
     }
-    .txt-description {
-        font-size: 23px;
-        padding: 0 0;
-    }
-    .title-me {
-        margin-top: 15px;
-    }
+
 }
 @media (min-width: 650px) and (max-width: 850px) {
     .ctn-inicio-about {
         height: 70vh;
     }
-    .img-profile {
+    .ctn-page-about__img {
         max-width: 40%
     }
 }
@@ -191,16 +192,16 @@
     app-menu {
         display: none;
     }
-    .img-profile {
-        max-width: 45%;
-    }
     .icon-logo {
         width: 45px;
     }
-    .img-profile {
+    .ctn-page-about__img {
         max-width: 55%;
     }
-    .txt-description {
+    .ctn-page-about__title {
+        font-size: 17px;
+    }
+    .ctn-page-about__txt-description {
         font-size: 20px;
         padding: 0 13px;
     }
@@ -211,9 +212,7 @@
     br {
         display: none;
     }
-    .title-me {
-        font-size: 17px;
-    }
+   
     .ctn-boton-menu{
         display: block;
         text-align: initial;

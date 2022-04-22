@@ -28,20 +28,18 @@ export class ContactComponent implements OnInit {
     })
   }
 
-  validarForm() {
-    console.log(this.formulario.get('email')?.invalid);
-    
-    if (this.formulario.get('name')?.invalid) {
+  validarForm() {   
+    if (this.formulario.get('name')?.invalid && this.formulario.get('name')?.touched) {
       this.alertaNombre = 'invalid-feedback-name';
     } else {
       this.alertaNombre = 'oculto';
     }
-    if (this.formulario.get('email')?.invalid) {
+    if (this.formulario.get('email')?.invalid && this.formulario.get('email')?.touched) {
       this.alertaEmail = 'invalid-feedback-email';
     } else {
       this.alertaEmail = 'oculto';
     }
-    if (this.formulario.get('message')?.invalid) {
+    if (this.formulario.get('message')?.invalid && this.formulario.get('message')?.touched) {
       this.alertaMensaje = 'invalid-feedback-mesagge';
     } else {
       this.alertaMensaje = 'oculto';
