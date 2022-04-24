@@ -38,6 +38,18 @@ p {
 .oculto {
     display: none;
 }
+.error-servidor {
+    display: block;
+    color: rgb(170, 12, 1);
+    font-size: 20px;
+    font-weight: 600;
+}
+.mostrar-mensaje {
+    display: block;
+    color: rgb(10, 84, 10);
+    font-size: 20px;
+    font-weight: 600;
+}
 .invalid-feedback-name,
 .invalid-feedback-email,
 .invalid-feedback-mesagge {

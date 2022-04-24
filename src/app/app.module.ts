@@ -22,6 +22,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { SwiperDesktopComponent } from './pages/projects/swiper-desktop/swiper-desktop.component';
 import { SwiperMobileComponent } from './pages/projects/swiper-mobile/swiper-mobile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 export const routes: Routes = [];
 @NgModule({
@@ -50,6 +51,7 @@ export const routes: Routes = [];
     SwiperModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes, {
       onSameUrlNavigation: 'ignore',
       anchorScrolling: 'enabled',

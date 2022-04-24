@@ -3,7 +3,7 @@
     <h3>Contacto</h3>
     <p>Si tienes una idea la cual quieres materializar, contáctame y trabajemos juntos!</p>
     <div class="ctn-form">
-        <form [formGroup]="formulario" action="https://formspree.io/f/xwkywejr" method="POST" autocomplete="off">
+        <form [formGroup]="formulario" id="my-form" action="https://formspree.io/f/xrgjozvo" method="POST" autocomplete="off">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre</label>
                 <input type="text" name="name" class="form-control" formControlName="name" (keydown)="validarForm()">
@@ -25,8 +25,10 @@
                     Campo requerido!
                 </div>
             </div>
+            <p [class]="mensajeEnviado">Mensaje enviado existosamente. Gracias por ponerse en contacto! <ngx-emoji size:16 emoji=":smiley::skin-tone-3:" ></ngx-emoji></p>
+            <p [class]="errorServidor">A ocurrido un error, intentalo nuevamente. <ngx-emoji size:16 emoji=":confused::skin-tone-3:" ></ngx-emoji></p>
             <div class="ctn-button" style="position: relative;" >
-                <button type="submit" (click)="validarForm()">Enviar</button>
+                <button type="submit" (click)="sendEmail()">Enviar</button>
             </div>
             </form>
             <div class="ctn-img">
