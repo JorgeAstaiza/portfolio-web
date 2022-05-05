@@ -144,6 +144,12 @@ ngx-emoji {
   }
 }
 
+.ctn-img-inicio {
+  &__idioma {
+    width: 90px;
+  }
+}
+
 /*Animacion texto perfil*/
 .content {
   position: absolute;
@@ -352,6 +358,9 @@ ngx-emoji {
   }
   .ctn-img-inicio {
     margin-top: 50px;
+    &__idioma {
+      width: 50px;
+    }
   }
   .ctn-info-page {
     margin-top: 45px;

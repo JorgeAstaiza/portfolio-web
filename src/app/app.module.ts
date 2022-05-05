@@ -22,7 +22,14 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { SwiperDesktopComponent } from './pages/projects/swiper-desktop/swiper-desktop.component';
 import { SwiperMobileComponent } from './pages/projects/swiper-mobile/swiper-mobile.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
 
 export const routes: Routes = [];
 @NgModule({
@@ -43,6 +50,13 @@ export const routes: Routes = [];
   ],
   imports: [
     BrowserModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     AppRoutingModule,
     FontAwesomeModule,
     AngularFullpageModule,
@@ -56,7 +70,8 @@ export const routes: Routes = [];
       onSameUrlNavigation: 'ignore',
       anchorScrolling: 'enabled',
       scrollPositionRestoration: 'enabled'
-    })
+    }),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
