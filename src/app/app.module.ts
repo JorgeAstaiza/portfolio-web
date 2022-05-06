@@ -8,7 +8,6 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TimelineComponent } from './pages/timeline/timeline.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { MenuComponent } from './pages/menu/menu.component';
 import { EmojiModule } from '@ctrl/ngx-emoji-mart/ngx-emoji';
 import { SkillsComponent } from './pages/skills/skills.component';
@@ -59,7 +58,6 @@ export const routes: Routes = [];
     }),
     AppRoutingModule,
     FontAwesomeModule,
-    AngularFullpageModule,
     EmojiModule,
     NgbModule,
     SwiperModule,

@@ -1,5 +1,75 @@
 {
+    "menu": {
+        "sobre-mi": "About me",
+        "servicios": "Services",
+        "trabajos": "Jobs",
+        "inicio": "Start",
+        "trayectoria": "Trajectory",
+        "contacto": "Contact"
+    },
     "inicio": {
-        "descripcion": "Hi! I'm a passionate tech software developer with extensive experience building modern web applications."
+        "descripcion": "Hi! I'm a passionate tech software developer with extensive experience building modern web applications.",
+        "idioma": "language"
+    },
+    "sobre-mi": {
+        "titilo": "About me",
+        "primero-parrafo": "I'm a software engineer with +3 years of experience developing web applications in the banking, public transport, hospital and government sectors, specializing in frontend web technologies with Angular and reactive programming with Rxjs applying best development practices.",
+        "segundo-parrafo": "Throughout my professional career I have acquired knowledge in various technologies such as Typescript, Javascript, Angular, React, Angular Material, Bootstrap and Rxjs.",
+        "tercer-parrafo": "I have a professional degree in computer systems engineering from the Autonomous University of Cauca as well as certifications on web development and responsive design in Platzi and Udemy"
+    },
+    "servicios": {
+        "titulo": "My services",
+        "landing-page-desc": "Design and implementation of custom landing pages for your business, store or personal page.",
+        "app-web-titulo": "Web applications",
+        "app-web-desc": "Design and development of SPAs with modern web technologies.",
+        "app-moviles-titulo": "Mobile apps",
+        "app-moviles-desc": "Design and implementation of mobile applications for Android and IOS.",
+        "habilidades": {
+            "titulo": "My skills",
+            "aprendiendo": "Learning..."
+        }
+    },
+    "trayectoria": {
+        "titulo": "My trajectory",
+        "desc": "Learn a little more about my career in the world of technology and software development",
+        "2018": "Speaker of entrepreneurship idea in the Hult Prize competition.",
+        "2019": "Leader in the university's software development seedbed.",
+        "2019-2": "Angular Frontend Developer at Sitis S.A.S developing hospital software for Mexico.",
+        "2020": "Graduation as Computer Systems Engineer.",
+        "2021": "Angular Frontend Developer at Asesoftware in multiple national and international projects."
+    },
+    "proyectos": {
+        "titulo": "My projects",
+        "desc": "Some personal and business projects in which I have participated",
+        "tecnologias": "Technologies",
+        "proy-1": {
+            "fecha": "March 2019",
+            "desc": "Colombian company with different lines of business such as project management and human resource management."
+        },
+        "proy-2": {
+            "fecha": "December 2019",
+            "desc": "Colombian entrepreneurship for agricultural harvesting."
+        },
+        "proy-3": {
+            "fecha": "July 2018",
+            "desc": "Web application for the control of entry and exit of bicycles for the Universidad Autónoma del Cauca."
+        },
+        "proy-4": {
+            "fecha": "October 2020",
+            "desc": "Gamified didactic education strategy to teach how to separate usable waste at home."
+        }
+    },
+    "contacto": {
+        "titulo": "Contact",
+        "desc": "If you have an idea you want to materialize, contact me and let's work together!",
+        "nombre": "Name",
+        "email": "Email",
+        "mensaje": "Write your message here",
+        "mensaje-enviado": "Message sent successfully. Thank you for contacting!",
+        "error-envio": "An error has occurred, please try again.",
+        "btn-enviar": "Send",
+        "error-nombre": "Please enter a correct name.",
+        "error-email": "Please enter a correct email.",
+        "error-mensaje": "Required field!"
     }
 }

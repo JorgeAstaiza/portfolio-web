@@ -1,5 +1,75 @@
 {
+    "menu": {
+        "sobre-mi": "Sobre mi",
+        "servicios": "Servicios",
+        "trabajos": "Trabajos",
+        "inicio": "Inicio",
+        "trayectoria": "Trayectoria",
+        "contacto": "Contacto"
+    },
     "inicio": {
-        "descripcion": "Hola! Soy un desarrollador de software apasionado a la tecnología con una amplia experiencia en la construcción de aplicaciones web modernas."
+        "descripcion": "Hola! Soy un desarrollador de software apasionado a la tecnología con una amplia experiencia en la construcción de aplicaciones web modernas.",
+        "idioma": "Idioma"
+    },
+    "sobre-mi": {
+        "titulo": "Sobre mí",
+        "primero-parrafo": "Soy Ingeniero de software con más de 3 años de experiencia en el desarrollo de aplicaciones web en el sector bancario, trasporte público, hospitalario y gubernamentales, especializado en tecnologías web frontend con Angular y programación reactiva con Rxjs aplicando mejores prácticas de desarrollo.",
+        "segundo-parrafo": "A lo largo de mi trayectoria profesional he adquirido conocimientos en diversas tecnologías como Typescript, Javascript, Angular, React, Angular Material, Boostrap y Rxjs.",
+        "tercer-parrafo": "Cuento con un título profesional de ingeniero de sistemas informáticos de la universidad Autónoma del Cauca además de certificaciones sobre desarrollo web y responsive design en Platzi y Udemy"
+    },
+    "servicios": {
+        "titulo": "Mis servicios",
+        "landing-page-desc": "Construcción de landing pages a medida para tu negocio, tienda o página personal.",
+        "app-web-titulo": "Aplicaciones web",
+        "app-web-desc": "Diseño y desarrollo de SPA con modernas tecnologías web.",
+        "app-moviles-titulo": "Aplicaciones móviles",
+        "app-moviles-desc": "Diseño e implementación de aplicaciones móviles para Android y IOS.",
+        "habilidades": {
+            "titulo": "Mis habilidades",
+            "aprendiendo": "Aprendiendo..."
+        }
+    },
+    "trayectoria": {
+        "titulo": "Mi trayectoria",
+        "desc": "Conoce un poco más a detalle mi trayectoria en el mundo de la tecnología y el desarrollo de software",
+        "2018": "Ponente de idea de emprendimiento en la competencia Hult Prize.",
+        "2019": "Líder en el semillero de desarrollo de software de la universidad.",
+        "2019-2": "Frontend Developer angular en Sitis S.A.S desarrollando software hospitalario para México.",
+        "2020": "Graduación como Ingeniero de sistemas informáticos.",
+        "2021": "Frontend Developer angular en Asesoftware en múltiples proyectos nacionales e internacionales."
+    },
+    "proyectos": {
+        "titulo": "Mis proyectos",
+        "desc": "Algunos proyectos personales y empresariales en los que he participado",
+        "tecnologias": "Tecnologías",
+        "proy-1": {
+            "fecha": "Marzo 2019",
+            "desc": "Empresa colombiana con diferentes líneas de negocio como gerencia de proyectos y gestíon de recursos humanos."
+        },
+        "proy-2": {
+            "fecha": "Diciembre 2019",
+            "desc": "Emprendimiento colombiano para la recolección agrícola."
+        },
+        "proy-3": {
+            "fecha": "Julio 2018",
+            "desc": "Aplicacion web para el control de ingreso y salidas de bicicletas para la universidad Autonoma del Cauca."
+        },
+        "proy-4": {
+            "fecha": "Octubre 2020",
+            "desc": "Estrategia de educacion didactica gamificada para enseñar a separar los residuos aprovechables en el hogar."
+        }
+    },
+    "contacto": {
+        "titulo": "Contacto",
+        "desc": "Si tienes una idea la cual quieres materializar, contáctame y trabajemos juntos!",
+        "nombre": "Nombre",
+        "email": "Correo electrónico",
+        "mensaje": "Escribe tu mensaje aquí",
+        "mensaje-enviado": "Mensaje enviado existosamente. Gracias por ponerse en contacto!",
+        "error-envio": "A ocurrido un error, intentalo nuevamente.",
+        "btn-enviar": "Enviar",
+        "error-nombre": "Ingrese un nombre correcto.",
+        "error-email": "Ingrese un correo electrónico correcto.",
+        "error-mensaje": "Campo requerido!"
     }
 }

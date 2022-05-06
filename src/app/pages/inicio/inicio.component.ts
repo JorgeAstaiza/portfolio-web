@@ -10,9 +10,9 @@ import {TranslateService } from '@ngx-translate/core'
 export class InicioComponent implements OnInit {
 
   constructor(
-    private translate: TranslateService
+    public translate: TranslateService
   ) { 
-    translate.addLangs(['en', 'es']);
+    translate.addLangs(['es', 'en']);
     translate.setDefaultLang('es');
     const browserLang = translate.getBrowserLang();
   }

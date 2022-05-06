@@ -2,14 +2,14 @@
       <div class="ctn-skills-services">
         <app-skills></app-skills>
         <div class="ctn-skills-services__swiper ctn-swiper">
-          <h3 class="ctn-skills-services__title">Mis servicios</h3>
+          <h3 class="ctn-skills-services__title">{{"servicios.titulo" | translate }}</h3>
           <swiper [effect]="'cards'" [grabCursor]="true" class="mySwiper">
             <ng-template swiperSlide>
               <div class="card">
                 <img class="card-img-top" src="../../../assets/img/landing-page-icon.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Landing pages</h5>
-                  <p class="card-text">Construcción de landing pages a medida para tu negocio, tienda o página personal.</p>
+                  <p class="card-text">{{"servicios.landing-page-desc" | translate}}</p>
                 </div>
               </div>
             </ng-template>
@@ -17,8 +17,8 @@
               <div class="card">
                 <img class="card-img-top" src="../../../assets/img/web-application-icon.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Aplicaciones web</h5>
-                  <p class="card-text">Diseño y desarrollo de SPA con modernas tecnologías web.</p>
+                  <h5 class="card-title">{{"servicios.app-web-titulo" | translate}}</h5>
+                  <p class="card-text">{{"servicios.app-web-desc" | translate}}</p>
                 </div>
               </div>
             </ng-template>
@@ -26,8 +26,8 @@
               <div class="card card-mobile">
                 <img class="card-img-top" src="../../../assets/img/mobile-application-icon.png"  alt="Card image cap">
                 <div class="card-body card-info-mobile">
-                  <h5 class="card-title">Aplicaciones móviles</h5>
-                  <p class="card-text">Diseño e implementación de aplicaciones móviles para Android y IOS</p>
+                  <h5 class="card-title">{{"servicios.app-moviles-titulo" | translate}}</h5>
+                  <p class="card-text">{{"servicios.app-moviles-desc" | translate}}</p>
                 </div>
               </div>
             </ng-template>

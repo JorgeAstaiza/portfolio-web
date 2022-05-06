@@ -1,4 +1,10 @@
 <div class="ctn-inicio">
+    <div class="ctn-idioma">
+        <p>{{"inicio.idioma" | translate}}</p>
+        <select class="form-select ctn-img-inicio__idioma" #langSelect (change)="translate.use(langSelect.value)">
+            <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+        </select>
+    </div>
     <div class="container ctn-info-page">
         <div class="row align-items-center ctn-info-page-inicio">
             <div class="col" >
@@ -38,10 +44,7 @@
                 </div>
             </div>
             <div class="col align-self-center ctn-img-inicio" >
-                <select class="form-select ctn-img-inicio__idioma" aria-label="Default select example">
-                    <option value="1" > &#xf042; </option>
-                    <option value="2"> &emsp;</option>
-                  </select>
+                
                 <img class="img-avatar" src="../../../assets/img/avatar2.png" alt="Me">
             </div>
         </div>

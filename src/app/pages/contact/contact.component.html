@@ -1,34 +1,34 @@
 
 <div class="ctn-inicio-contact">
-    <h3>Contacto</h3>
-    <p>Si tienes una idea la cual quieres materializar, contáctame y trabajemos juntos!</p>
+    <h3>{{"contacto.titulo" | translate}}</h3>
+    <p>{{"contacto.desc" | translate}}</p>
     <div class="ctn-form">
         <form [formGroup]="formulario" id="my-form" action="https://formspree.io/f/xrgjozvo" method="POST" autocomplete="off">
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                <label for="exampleInputEmail1" class="form-label">{{"contacto.nombre" | translate}}</label>
                 <input type="text" name="name" class="form-control" formControlName="name" (keydown)="validarForm()">
                 <div [class]="alertaNombre">
-                    Ingrese un nombre correcto.
+                    {{"contacto.error-nombre" | translate}}
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                <label for="exampleInputEmail1" class="form-label">{{"contacto.email" | translate}}</label>
                 <input type="email" name="email"  class="form-control" id="exampleInputEmail1" formControlName="email" aria-describedby="emailHelp" (keydown)="validarForm()">
                 <div [class]="alertaEmail">
-                    Ingrese un correo electrónico correcto.
+                    {{"contacto.error-email" | translate}}
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">¿Escribe tu mensaje aquí?</label>
+                <label for="exampleFormControlTextarea1" class="form-label">{{"contacto.mensaje" | translate}}</label>
                 <textarea class="form-control" name="message"  id="exampleFormControlTextarea1" formControlName="message" rows="3" (keydown)="validarForm()"></textarea>
                 <div [class]="alertaMensaje">
-                    Campo requerido!
+                    {{"contacto.error-mensaje" | translate}}
                 </div>
             </div>
-            <p [class]="mensajeEnviado">Mensaje enviado existosamente. Gracias por ponerse en contacto! <ngx-emoji size:16 emoji=":smiley::skin-tone-3:" ></ngx-emoji></p>
-            <p [class]="errorServidor">A ocurrido un error, intentalo nuevamente. <ngx-emoji size:16 emoji=":confused::skin-tone-3:" ></ngx-emoji></p>
+            <p [class]="mensajeEnviado">{{"contacto.mensaje-enviado" | translate}} <ngx-emoji size:16 emoji=":smiley::skin-tone-3:" ></ngx-emoji></p>
+            <p [class]="errorServidor">{{"contacto.error-envio" | translate}} <ngx-emoji size:16 emoji=":confused::skin-tone-3:" ></ngx-emoji></p>
             <div class="ctn-button" style="position: relative;" >
-                <button type="submit" (click)="sendEmail()">Enviar</button>
+                <button type="submit" (click)="sendEmail()">{{"contacto.btn-enviar" | translate}}</button>
             </div>
             </form>
             <div class="ctn-img">
