@@ -8,12 +8,12 @@
         "contacto": "Contact"
     },
     "inicio": {
-        "descripcion": "Hi! I'm a passionate tech software developer with extensive experience building modern web applications.",
+        "descripcion": "Hi! I'm a passionate about tech software. I'm a developer with extensive experience building modern web applications.",
         "idioma": "language"
     },
     "sobre-mi": {
-        "titilo": "About me",
-        "primero-parrafo": "I'm a software engineer with +3 years of experience developing web applications in the banking, public transport, hospital and government sectors, specializing in frontend web technologies with Angular and reactive programming with Rxjs applying best development practices.",
+        "titulo": "About me",
+        "primero-parrafo": "I'm a software engineer with +3 years of experience developing web applications in the banking, public transport, hospital and government sectors, specializing in frontend web technologies with Angular and reactive programming with Rxjs applying the best development practices.",
         "segundo-parrafo": "Throughout my professional career I have acquired knowledge in various technologies such as Typescript, Javascript, Angular, React, Angular Material, Bootstrap and Rxjs.",
         "tercer-parrafo": "I have a professional degree in computer systems engineering from the Autonomous University of Cauca as well as certifications on web development and responsive design in Platzi and Udemy"
     },
@@ -61,7 +61,7 @@
     },
     "contacto": {
         "titulo": "Contact",
-        "desc": "If you have an idea you want to materialize, contact me and let's work together!",
+        "desc": "If you have an idea and you wish to make it real, contact me and let's work together!",
         "nombre": "Name",
         "email": "Email",
         "mensaje": "Write your message here",

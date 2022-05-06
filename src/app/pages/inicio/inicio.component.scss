@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 910px;
 }
 .ctn-idioma {
   display: flex;
@@ -268,7 +268,7 @@ ngx-emoji {
 }
 @media (min-width: 1000px) and (max-width: 1072px) {
   .content{
-    top: 10%;
+    top: 6%;
   }
 }
 @media (min-width: 1072px) and (max-width: 1150px) {
@@ -278,10 +278,10 @@ ngx-emoji {
 }
 @media (min-width: 1145px) and (max-width: 1395px) {
   .content{
-    top: 10.4%;
+    top: 11.3%;
   }
   .ctn-inicio {
-    height: 100vh;
+    height: 755px;
   }
   
 }
