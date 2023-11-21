@@ -3,13 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FormEmailService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  sendEmailByForm (form: any): Observable<any> {
-    return this.http.post('https://formspree.io/f/xrgjozvo', form);
+  sendEmailByForm(form: any): Observable<any> {
+    return this.http.post('https://formspree.io/f/mnqwboge', form);
   }
 }

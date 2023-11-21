@@ -1,39 +1,25 @@
-
-<div class="ctn-inicio-contact">
-    <h3>{{"contacto.titulo" | translate}}</h3>
-    <p>{{"contacto.desc" | translate}}</p>
-    <div class="ctn-form">
-        <form [formGroup]="formulario" id="my-form" action="https://formspree.io/f/xrgjozvo" method="POST" autocomplete="off">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">{{"contacto.nombre" | translate}}</label>
-                <input type="text" name="name" class="form-control" formControlName="name" (keydown)="validarForm()">
-                <div [class]="alertaNombre">
-                    {{"contacto.error-nombre" | translate}}
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">{{"contacto.email" | translate}}</label>
-                <input type="email" name="email"  class="form-control" id="exampleInputEmail1" formControlName="email" aria-describedby="emailHelp" (keydown)="validarForm()">
-                <div [class]="alertaEmail">
-                    {{"contacto.error-email" | translate}}
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">{{"contacto.mensaje" | translate}}</label>
-                <textarea class="form-control" name="message"  id="exampleFormControlTextarea1" formControlName="message" rows="3" (keydown)="validarForm()"></textarea>
-                <div [class]="alertaMensaje">
-                    {{"contacto.error-mensaje" | translate}}
-                </div>
-            </div>
-            <p [class]="mensajeEnviado">{{"contacto.mensaje-enviado" | translate}} <ngx-emoji size:16 emoji=":smiley::skin-tone-3:" ></ngx-emoji></p>
-            <p [class]="errorServidor">{{"contacto.error-envio" | translate}} <ngx-emoji size:16 emoji=":confused::skin-tone-3:" ></ngx-emoji></p>
-            <div class="ctn-button" style="position: relative;" >
-                <button type="submit" (click)="sendEmail()">{{"contacto.btn-enviar" | translate}}</button>
-            </div>
-            </form>
-            <div class="ctn-img">
-                <img src="../../../assets/img/myInfo.png" alt="">
-            </div>
+<div class="flex flex-col justify-center items-center w-full mt-5">
+  <h3 class="text-2xl font-semibold">{{ "contacto.titulo" | translate }}</h3>
+  <p class="mb-4 text-xl">{{ "contacto.desc" | translate }}</p>
+  <div class="flex flex-col mb-5">
+    <div class="flex">
+      <img
+        class="w-10 mr-3"
+        src="../../../assets/img/bandeja-de-entrada.png"
+        alt=""
+        srcset=""
+      />
+      <p class="text-lg">alexandercordoba.dev@gmail.com</p>
     </div>
+    <br />
+    <div class="flex">
+      <img
+        class="w-10 mr-3"
+        src="../../../assets/img/whatsapp.png"
+        alt=""
+        srcset=""
+      />
+      <p class="text-lg">+57 3184083717</p>
+    </div>
+  </div>
 </div>
-

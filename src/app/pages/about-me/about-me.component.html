@@ -1,21 +1,29 @@
-<div class="ctn-inicio-about">
-    <div class="container">
-        <div class="row ctn-page-about">
-            <div class="col">
-                <img class="ctn-page-about__img" src="../../../assets/img/img-about-me.jpg" alt="" srcset="">
-            </div>
-            <div class="col ctn-page-about__text">
-                <h3 class="ctn-page-about__title">{{"sobre-mi.titulo" | translate}}</h3>
-                <p class="line-bottom"></p>
-                <p class="ctn-page-about__txt-description">
-                <ngx-emoji size:16 emoji=":man-raising-hand::skin-tone-3:" ></ngx-emoji>{{"sobre-mi.primero-parrafo" | translate}} <br> <br>
-                <ngx-emoji size:16 emoji=":rocket::skin-tone-3:" ></ngx-emoji>{{"sobre-mi.segundo-parrafo" | translate}} <br> <br>
-                <ngx-emoji size:16 emoji=":books::skin-tone-3:" ></ngx-emoji>{{"sobre-mi.tercer-parrafo" | translate}} <br>
-                <!-- <ngx-emoji size:16 emoji=":video_game::skin-tone-3:" ></ngx-emoji> Me siento muy afortunado porque amo mi profesión y siempre doy lo mejor de mi para seguir aprendiendo y mejorando. Cuando no estoy sentado en frente de la computadora estoy jugando futbol, leyendo o quizás siendo Rambo en warzone.  -->
-                </p>
-            </div>
-        </div>
-        
+<div class="flex justify-center w-full">
+  <div
+    class="flex flex-col w-full justify-center items-center lg:w-4/5 lg:flex-row lg:items-center lg:gap-5"
+  >
+    <img
+      class="w-9/12 mb-3 rounded-3xl md:w-2/5 lg:w-2/5 mb:mb-0"
+      src="../../../assets/img/img-about-me.jpg"
+      alt=""
+      srcset=""
+    />
+    <div class="flex flex-col justify-center md:items-center">
+      <h3 class="text-2xl">
+        {{ "sobre-mi.titulo" | translate }}
+      </h3>
+      <p class="line-bottom"></p>
+      <p class="ctn-page-about__txt-description text-2xl md:w-5/6 lg:w-full">
+        <ngx-emoji size:16 emoji=":man-raising-hand::skin-tone-3:"></ngx-emoji
+        >{{ "sobre-mi.primero-parrafo" | translate }} <br />
+        <br />
+        <ngx-emoji size:16 emoji=":rocket::skin-tone-3:"></ngx-emoji
+        >{{ "sobre-mi.segundo-parrafo" | translate }} <br />
+        <br />
+        <ngx-emoji size:16 emoji=":books::skin-tone-3:"></ngx-emoji
+        >{{ "sobre-mi.tercer-parrafo" | translate }} <br />
+        <!-- <ngx-emoji size:16 emoji=":video_game::skin-tone-3:" ></ngx-emoji> Me siento muy afortunado porque amo mi profesión y siempre doy lo mejor de mi para seguir aprendiendo y mejorando. Cuando no estoy sentado en frente de la computadora estoy jugando futbol, leyendo o quizás siendo Rambo en warzone.  -->
+      </p>
     </div>
+  </div>
 </div>
-

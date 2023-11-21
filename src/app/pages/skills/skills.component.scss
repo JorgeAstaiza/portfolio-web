@@ -9,15 +9,13 @@
 p{
     font-weight: bold;
 }
-.ctn-skills,
-.ctn-learning {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap !important;
-}
+
 .ctn-img-logo {
     width: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
@@ -29,35 +27,4 @@ p{
     transform: scale(1.1) rotate(7deg);
     transition-duration: 0.3s;
 }
-.sub-title {
-    font-size: 30px;
-    font-family: 'Hubballi', cursive;
-    font-weight: bold;
-    margin: 10px 0;
-}
-@media (max-width: 800px) {
-    .logo{
-        width: 45px;
-    }
-    .sub-title {
-        font-size: 25px;
-        margin-top: 5px;
-    }
 
-}
-@media (max-width: 388px) {
-    .ctn-learning,
-    .title-learning {
-        display: none;
-    }
-
-}
-@media (max-width: 500px) {
-    .ctn-skills {
-        flex-wrap: wrap !important;
-    }
-    .logo{
-        width: 45px;
-    }
-  
-}

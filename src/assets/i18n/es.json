@@ -8,13 +8,13 @@
         "contacto": "Contacto"
     },
     "inicio": {
-        "descripcion": "Hola! Soy un desarrollador de software apasionado a la tecnología con una amplia experiencia en la construcción de aplicaciones web modernas.",
+        "descripcion": "¡Saludos desde el reino del código! Soy un entusiasta del desarrollo de software con la capacidad de convertir líneas de código en obras maestras digitales. Navego por el vasto océano de la tecnología, armado con un teclado y una taza interminable de café. Mi superpoder es transformar ideas en aplicaciones web modernas con un toque mágico. ",
         "idioma": "Idioma"
     },
     "sobre-mi": {
         "titulo": "Sobre mí",
-        "primero-parrafo": "Soy Ingeniero de software con más de 3 años de experiencia en el desarrollo de aplicaciones web en el sector bancario, trasporte público, hospitalario y gubernamentales, especializado en tecnologías web frontend con Angular y programación reactiva con Rxjs aplicando mejores prácticas de desarrollo.",
-        "segundo-parrafo": "A lo largo de mi trayectoria profesional he adquirido conocimientos en diversas tecnologías como Typescript, Javascript, Angular, React, Angular Material, Boostrap y Rxjs.",
+        "primero-parrafo": "Apasionado desarrollador web con +4 años de experiencia y una sólida trayectoria en diversos sectores, fusionando mi creatividad y la tecnología. Mi compromiso radica en implementar las mejores prácticas de desarrollo actuales para crear experiencias web impactantes. Enfocado en superar desafíos y aprender continuamente, estoy dedicado a construir soluciones web de alta calidad que no solo cumplan, sino que superen las expectativas de mis clientes.",
+        "segundo-parrafo": "A lo largo de mi trayectoria profesional he adquirido conocimientos en diversas tecnologías como Typescript, Javascript, Angular, React, NodeJS, AWS y base de datos relaciones y no relaciones.",
         "tercer-parrafo": "Cuento con un título profesional de ingeniero de sistemas informáticos de la universidad Autónoma del Cauca además de certificaciones sobre desarrollo web y responsive design en Platzi y Udemy"
     },
     "servicios": {
@@ -32,11 +32,11 @@
     "trayectoria": {
         "titulo": "Mi trayectoria",
         "desc": "Conoce un poco más a detalle mi trayectoria en el mundo de la tecnología y el desarrollo de software",
-        "2018": "Ponente de idea de emprendimiento en la competencia Hult Prize.",
         "2019": "Líder en el semillero de desarrollo de software de la universidad.",
         "2019-2": "Frontend Developer angular en Sitis S.A.S desarrollando software hospitalario para México.",
-        "2020": "Graduación como Ingeniero de sistemas informáticos.",
-        "2021": "Frontend Developer angular en Asesoftware en múltiples proyectos nacionales e internacionales."
+        "2021": "Frontend Developer en Asesoftware participando en proyecto bancarios, transporte publico y gubernamentales",
+        "2022": "Fullstack developer en el proyecto Citobot de la universidad Javeriana de Cali para detectar cancer cervico usando AI.",
+        "2023": "Web UI Developer en Softserve participando en proyectos para clientes Estadunidenses "
     },
     "proyectos": {
         "titulo": "Mis proyectos",
@@ -57,6 +57,10 @@
         "proy-4": {
             "fecha": "Octubre 2020",
             "desc": "Estrategia de educacion didactica gamificada para enseñar a separar los residuos aprovechables en el hogar."
+        },
+        "proy-5": {
+            "fecha": "Marzo 2023",
+            "desc": "Fullstack developer en una aplicacion web para la deteccion de cancer cervico uterino usando AI."
         }
     },
     "contacto": {

@@ -9,21 +9,17 @@
     background-color: rgb(143 143 143 / 52%);
     backdrop-filter: blur(10px);
     width: 100%;
+    padding: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 app-inicio,
-app-about-me {
-    height: 100vh;
-}
-
-@media (min-width: 770px) and (max-width: 993px) {
-    .pages-container {
-        width: 90%;
-    }
-}
-@media (max-width: 800px) {
-    .pages-container {
-        width: 93%;
-        margin: 0 auto;
-    }
-
+app-about-me,
+app-my-services,
+app-timeline,
+app-projects {
+    display: inline-block;
 }

@@ -8,12 +8,12 @@
         "contacto": "Contact"
     },
     "inicio": {
-        "descripcion": "Hi! I'm a passionate about tech software. I'm a developer with extensive experience building modern web applications.",
+        "descripcion": "Greetings from the kingdom of code! I am a software development enthusiast with the ability to turn lines of code into digital masterpieces. I navigate the vast ocean of technology, armed with a keyboard and an endless cup of coffee. My superpower is transforming ideas into modern web applications with a magic touch. ",
         "idioma": "language"
     },
     "sobre-mi": {
         "titulo": "About me",
-        "primero-parrafo": "I'm a software engineer with +3 years of experience developing web applications in the banking, public transport, hospital and government sectors, specializing in frontend web technologies with Angular and reactive programming with Rxjs applying the best development practices.",
+        "primero-parrafo": "Passionate web developer with +4 years of experience and a solid track record in various sectors, fusing my creativity and technology. My commitment lies in implementing current development best practices to create impactful web experiences. Focused on overcoming challenges and continually learning, I am dedicated to building high-quality web solutions that not only meet, but exceed my clients' expectations.",
         "segundo-parrafo": "Throughout my professional career I have acquired knowledge in various technologies such as Typescript, Javascript, Angular, React, Angular Material, Bootstrap and Rxjs.",
         "tercer-parrafo": "I have a professional degree in computer systems engineering from the Autonomous University of Cauca as well as certifications on web development and responsive design in Platzi and Udemy"
     },
@@ -36,7 +36,9 @@
         "2019": "Leader in the university's software development seedbed.",
         "2019-2": "Angular Frontend Developer at Sitis S.A.S developing hospital software for Mexico.",
         "2020": "Graduation as Computer Systems Engineer.",
-        "2021": "Angular Frontend Developer at Asesoftware in multiple national and international projects."
+        "2021": "Angular Frontend Developer at Asesoftware in multiple national and international projects.",
+        "2022": "Fullstack developer in the Citobot project at the Javeriana University of Cali to detect cervical cancer using AI.",
+        "2023": "Web UI Developer at Softserve participating in projects for US clients."
     },
     "proyectos": {
         "titulo": "My projects",
@@ -57,6 +59,10 @@
         "proy-4": {
             "fecha": "October 2020",
             "desc": "Gamified didactic education strategy to teach how to separate usable waste at home."
+        },
+        "proy-5": {
+            "fecha": "March 2023",
+            "desc": "Fullstack developer in a application web to detect cervical cancer using AI."
         }
     },
     "contacto": {

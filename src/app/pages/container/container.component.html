@@ -1,42 +1,66 @@
-<div class="body-inicio vh-100">
-    <app-menu style="position: fixed; z-index: 5;"></app-menu>
-    <div style="position: absolute; z-index: 2;">
-        <div class="ctn-boton-menu">
-            <button (click)="toggleMenu()">
-                <img class="icon-logo" src="../../../assets/img/menu-lateral.png" alt="" srcset="">
-            </button>
-        </div>
-        <div [ngClass]="{'menu': flag, 'menu-oculto': !flag}" id="toggle-menu">
-
-            <div style="display: flex; justify-content: space-between;">
-    
-                <ul>
-                    <li> 
-                        <a (click)="toggleMenu()"[routerLink] = "['/']" fragment="home">{{"menu.inicio" | translate}}</a> 
-                    </li>
-                    <li>
-                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="about">{{"menu.sobre-mi" | translate}}</a> 
-                    </li>
-                    <li>
-                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="services">{{"menu.servicios" | translate}}</a>
-                    </li>
-                    <li>
-                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="timeline">{{"menu.trayectoria" | translate}}</a> 
-                    </li>
-                    <li> 
-                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="projects">{{"menu.trabajos" | translate}}</a> 
-                    </li>
-                    <li> 
-                        <a (click)="toggleMenu()" [routerLink] = "['/']" fragment="contact">{{"menu.contacto" | translate}}</a> 
-                    </li>
-                </ul>
-                <button class="ctn-boton-close" (click)="toggleMenu()">
-                    <img src="../../../assets/img/icono-close.png" alt="" srcset="">
-                </button>
-            </div>
-        </div>
+<div class="flex items-center flex-col h-screen">
+  <app-menu style="position: fixed; z-index: 5"></app-menu>
+  <div style="position: absolute; z-index: 2">
+    <div class="ctn-boton-menu">
+      <button (click)="toggleMenu()">
+        <img
+          class="icon-logo"
+          src="../../../assets/img/menu-lateral.png"
+          alt=""
+          srcset=""
+        />
+      </button>
     </div>
-    <div class="content">
-        <ng-content></ng-content>
+    <div [ngClass]="{ menu: flag, 'menu-oculto': !flag }" id="toggle-menu">
+      <div style="display: flex; justify-content: space-between">
+        <ul>
+          <li>
+            <a (click)="toggleMenu()" [routerLink]="['/']" fragment="home">{{
+              "menu.inicio" | translate
+            }}</a>
+          </li>
+          <li>
+            <a (click)="toggleMenu()" [routerLink]="['/']" fragment="about">{{
+              "menu.sobre-mi" | translate
+            }}</a>
+          </li>
+          <li>
+            <a
+              (click)="toggleMenu()"
+              [routerLink]="['/']"
+              fragment="services"
+              >{{ "menu.servicios" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              (click)="toggleMenu()"
+              [routerLink]="['/']"
+              fragment="timeline"
+              >{{ "menu.trayectoria" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              (click)="toggleMenu()"
+              [routerLink]="['/']"
+              fragment="projects"
+              >{{ "menu.trabajos" | translate }}</a
+            >
+          </li>
+          <li>
+            <a (click)="toggleMenu()" [routerLink]="['/']" fragment="contact">{{
+              "menu.contacto" | translate
+            }}</a>
+          </li>
+        </ul>
+        <button class="ctn-boton-close" (click)="toggleMenu()">
+          <img src="../../../assets/img/icono-close.png" alt="" srcset="" />
+        </button>
+      </div>
     </div>
+  </div>
+  <div class="w-full p-3 md:w-4/5 md:pt-5 md:pb-5">
+    <ng-content></ng-content>
+  </div>
 </div>

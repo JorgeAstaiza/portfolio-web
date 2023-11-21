@@ -27,44 +27,13 @@
   &-text {
       font-family: 'Hubballi', cursive;
   }
-  &-title {
-      font-size: 27px;
-      font-weight: bold;
-  }
   &-img-top {
       width: auto;
       height: auto;
       padding: 10px;
   }
-  &-info-mobile{
-    padding: 0;
-  }
 }
 
-.ctn-skills-services {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 70%;
-  &__swiper {
-    display: flex;
-    flex-direction: column;
-  }
-  &__title {
-    margin-top: 15px;
-  }
-}
-
-.card-app-web {
-    margin: 0 25px 0 25px !important;
-}
-
-h3{
-    margin-top: 30px;
-    font-size: 30px;
-    font-family: 'Hubballi', cursive;
-    font-weight: bold;
-}
 
 //SWIPER
 .swiper {
